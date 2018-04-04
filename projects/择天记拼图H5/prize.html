@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection">
+    <title>择天记</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+   	.music_img1{width: 60px;height: 60px;position: fixed;top: 20px;right: 20px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background: url(img/music.png) no-repeat;animation: myMusic 2s linear infinite;-webkit-animation: myMusic 2s linear infinite;background-size: 100%;}
+	.music_img2{width: 60px;height: 60px;position: fixed;top: 20px;right: 20px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background:url(img/music2.png) no-repeat;background-size: 100%;}	
+	@keyframes myMusic{
+		0%{
+			transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes myMusic{
+		0%{
+			transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+		}
+	}	
+</style>
+<body>
+	<audio id="audio" src="audio/muisc.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>
+	<div id="music" class="music music_img1" onclick="playOrPaused();"></div>
+    <div class="pri_bg">
+    	<div class="d_puz_logo"><img src="img/d_logo.png" width="100%"/></div>
+    	<div class="pri_tsk">
+    		<img src="img/p_03.png" width="100%" />
+    	</div>
+    	<!--我要抽奖按钮-->
+    	<div class="pri_but">
+    		<button onclick="$('.d_pri').css('display','block')"><img src="img/p_01.png" width="100%"/></button>
+    	</div>
+    	<!--在玩一次按钮-->
+    	<div class="pri_but">
+    		<button onclick="window.location.href='index.html'"><img src="img/p_02.png" width="100%"/></button>
+    	</div>
+    	<!--我的奖品按钮-->
+    	<div class="pri_but">
+    		<button onclick="$('.d_pri_zj').css('display','block')"><img src="img/p_04.png" width="100%"/></button>
+    	</div>
+    	<!--活动柜规则按钮-->
+    	<div class="pri_but">
+    		<button onclick="$('.d_rule_back').css('display','block')"><img src="img/p2_02.png" width="100%"/></button>
+    	</div>
+    </div>
+    
+    <!--我要抽奖-->
+    <div class="x_prize_back d_pri" style="display: ;">
+		<div class="d_par_chose"><img onclick="$('.x_prize_back').css('display','none')" src="img/close.png" width="100%"/></div>
+		<!--抽中-->
+		<div class="d_par_zj" style="display: ;">
+			<!--卡券-->
+			<div class="d_par_kq" style="display: none;">
+				<div class="d_par_kq_img"><img src="img/p3_kq.png" width="100%"/></div>
+				<p class="d_par_kq_txt">
+					<img src="img/p3_txt.png" width="100%"/>
+				</p>
+			</div>
+			<!--实物奖品-->
+			<div class="d_par_zy">
+				
+				<!--手串-->
+				<div class="par_zyth" style="display:none ;">
+					<div id="mxp" class="par_jp2">
+						<img src="img/p3_jp1.png" width="100%" />
+					</div>
+					<p class="par_zyth_txt">
+						<img src="img/p3_txt1.png" width="100%" />
+					</p>
+				</div>
+				<!--银胸针-->
+				<div class="par_zyth" style="display: none;">
+					<div id="par_cbxl" class="par_jp">
+						<img src="img/p3_jp2.png" width="100%" />
+					</div>
+					<p class="par_zyth_txt2">
+						<img src="img/p3_txt2.png" width="100%" />
+					</p>
+				</div>
+				<!--彩宝项链-->
+				<div class="par_zyth" style="display: none;">
+					<div id="par_sc" class="par_jp">
+						<img src="img/p3_jp3.png" width="100%" />
+					</div>
+					<p class="par_zyth_txt">
+						<img src="img/p3_txt3.png" width="100%" />
+					</p>
+				</div>
+				
+				<!--信息填写-->
+				<div class="pri_submit">
+					<p class="pri_submit_txt"><img src="img/p3_tsy.png" width="100%"/></p>
+					<div class="pri_submit_bd">
+						<p>
+							<span class="pri_submit_bd_txt"><img src="img/p3_name.png" width="100%"/></span>
+							<input type="text" class="pri_submit_bd_inp" />
+						</p>
+						<p>
+							<span class="pri_submit_bd_txt"><img src="img/p3_phone.png" width="100%"/></span>
+							<input type="text" class="pri_submit_bd_inp" />
+						</p>
+						<p>
+							<button class="pri_submit_but"><img src="img/p3_03.png" width="100%"/></button>
+						</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--未抽中-->
+		<div class="d_par_wcz" style="display: none;">
+			<img src="img/p3_01.png" width="100%"/>
+		</div>
+		<!--抽奖次数上限-->
+		<div class="d_par_sx" style="display: none;">
+			<img src="img/p3_02.png" width="100%"/>
+		</div>
+	</div>
+	
+	<!--我的奖品-->
+	<div class="x_prize_back d_pri_zj" style="display: ;">
+		<div class="x_prize_close" ><img onclick="$('.x_prize_back').css('display','none')" src="img/close.png" width="100%"/></div>
+		<!--奖品1   抵用券-->
+		<div class="x_prize_box">
+			<img src="img/p1_jp1.png" width="100%"/>
+		</div>
+		<!--奖品2  命星手串-->
+		<div class="x_prize_box" style="display: none;">
+			<img src="img/p1_jp2.png" width="100%"/>
+		</div>
+		<!--奖品3  蔷薇银胸针-->
+		<div class="x_prize_box" style="display: none;">
+			<img src="img/p1_jp3.png" width="100%"/>
+		</div>
+		<!--奖品4  彩宝项链-->
+		<div class="x_prize_box" style="display: none;">
+			<img src="img/p1_jp4.png" width="100%"/>
+		</div>
+		<!--未中奖-->
+		<div class="x_prize_box" style="display: none;">
+			<img src="img/p1_09.png" width="100%" class="x_prize_box_img"/>
+		</div>
+	</div>
+    <!--活动规则-->
+	<div class="d_rule_back" >
+		<div class="d_close" onclick="$('.d_rule_back').css('display','none')"><img src="img/close.png" width="100%"/></div>
+		<div class="d_rule_box"><img src="img/p1_06.png" width="100%"/></div>
+	</div>
+	
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+    	//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+	    //音乐播放暂停
+		var audio = document.getElementById('audio');
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+		
+    	$(function(){
+    		//弹窗
+    		$MsgBox={
+				Alert:function(msg){
+					MsgHtml("alert",msg);
+				}
+			}
+			var MsgHtml=function(type,msg){
+				var _html="";
+				_html += '<div class="register_mas">'+msg+'</div>';
+				if(type == "alert"){
+					_html += '';
+				}
+				$("body").append(_html); //将_html添加到body里面
+			}
+			//领取卡券
+			$(".d_par_kq_img").click(function(){
+				$MsgBox.Alert("领取成功");
+				setTimeout(function(){$(".register_mas").hide()},1000);
+			})
+			
+    	})
+    </script>
+</body>
+</html>

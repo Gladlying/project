@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+</head>
+<body>
+<div style="display: none">
+    <audio id="audio_zt" src="video/Peak%20A%20Soul.mp3" style="display: none;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>
+</div>
+
+<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+<!--首页-->
+<div class="p1_bg">
+    <div class="p1_deng">
+        <p class="p1_deng_left">
+            <img src="img/p1_left_icon.png"/>
+            <span class="p1_left_hover"><img src="img/p1_d_icon_hover.png"/></span>
+        </p>
+        <p class="p1_deng_right">
+            <img src="img/p1_right_icon.png"/>
+            <span class="p1_right_hover"><img src="img/p1_d_icon_hover.png"/></span>
+        </p>
+    </div>
+    <p class="p1_top_txt"><img src="img/p1_txt1.png"/></p>
+    <p class="p1_mb">
+        <img src="img/p1_icon.png" />
+        <span class="p1_mb_hover"><img src="img/p1_icon_hover.png"/></span>
+    </p>
+    <p class="p1_ss_txt"><img src="img/p1_txt2.png"/></p>
+    <p class="p1_ss_s"><img src="img/p1_hand.png"/></p>
+    <p class="p1_peo"><img src="img/p1_peo.png"/></p>
+    <p class="p1_bg2"><img src="img/p1_bg2.png"/></p>
+</div>
+
+
+<!--进屋-->
+<div class="home_inside">
+    <div class="text1">
+        <img src="img/text1.png">
+    </div>
+    <div class="home_hand">
+        <img src="img/p1_hand.png">
+    </div>
+    <div class="home_iphone">
+        <img src="img/iphone.png">
+    </div>
+    <div class="leaflets">
+        <div class="home_leaflets_guang">
+            <img src="img/guangxiao.png">
+        </div>
+        <div class="home_leaflets">
+            <img src="img/leaflets.png">
+        </div>
+    </div>
+</div>
+
+
+<!--手机窗口-->
+<div class="Dialog" style="display: none">
+    <div class="hand">
+        <img src="img/hand.png">
+    </div>
+    <div class="Dialog_header">
+        <img src="img/header.png">
+    </div>
+    <div class="Dialog_body" style="text-align: right;">
+        <div class="Dialog_main" >
+            <img src="img/main.png" style="width:28%" >
+        </div>
+        <div class="Dialog_mother">
+            <img class="Dialog_mother_img" src="img/mother.png">
+        </div>
+    </div>
+    <div class="Dialog_footer">
+        <img src="img/keyboard.png">
+    </div>
+</div>
+
+<!--最后收拾干净的页面-->
+
+
+<div class="p4_div" style="display: none">
+    <button class="p4_but"><img src="img/p4_but.png"/></button>
+</div>
+<!--明星选择 -->
+<div class="star" style="display: none">
+    <div style="width: 70%;margin: auto;padding-top: 40px;">
+        <img src="img/starTit.png">
+    </div>
+    <div class="starRadio">
+        <div class="starRadioUl1">
+            <div data-id="1" class="stareople"><img src="img/star1.png"><p>活动嘉宾：金志文</p></div>
+            <div data-id="2" class="stareople"><img style="width: 86%;" src="img/star2.png"><p>活动嘉宾：吴启华</p></div>
+        </div>
+        <div class="starRadioUl2">
+            <div data-id="3" class="stareople"><img src="img/star3.png"><p>活动嘉宾：胡杨林</p></div>
+            <div data-id="4" class="stareople"><img src="img/star4.png"><p>活动嘉宾：海明威</p></div>
+            <div data-id="5" class="stareople"><img src="img/star5.png"><p>活动嘉宾：许佳慧</p></div>
+            <div data-id="6" class="stareople"><img style="width: 86%;" src="img/star6.png"><p>活动嘉宾：黄品源</p></div>
+            <div data-id="7" class="stareople"><img style="width: 86%;" src="img/star7.png"><p>活动嘉宾：朱之文</p></div>
+            <div data-id="8" class="stareople"><img src="img/star8.png"><p>活动嘉宾：汤潮</p></div>
+        </div>
+        <div class="star_hand" style="display: none">
+            <img src="img/p1_hand.png">
+        </div>
+        <div class="starBtn">
+            <img src="img/starBtn.png">
+        </div>
+    </div>
+</div>
+<div class="video" style="display: none;height: 100%;background: black;flex-direction: column;justify-content: center;">
+    <video
+            id="video"
+            src="video/WeChatSight23.mp4"
+            preload="auto"
+            webkit-playsinline="true"
+            playsinline="true"
+            x-webkit-airplay="allow"
+            x5-video-player-type="h5"
+            x5-video-player-fullscreen="true"
+            poster="video/videoBg.jpg"
+            controls
+            style="width: 100%;"/>
+    </video>
+</div>
+
+
+<!--地图-->
+<div class="map_div" style="display: none">
+    <div class="map_hand">
+        <img src="img/p1_hand-you.png">
+    </div>
+    <div class="map_img">
+        <p class="map"><img src="img/map1.png" /></p>
+        <p class="map_img_hover"><img src="img/map_hover.png"/></p>
+        <div class="map_but">
+            <button data-id="1">黑龙江</button>
+            <button data-id="2">吉林</button>
+            <button data-id="3">辽宁</button>
+            <button data-id="4">北京</button>
+            <button data-id="5">天津</button>
+            <button data-id="6">内蒙古</button>
+            <button data-id="7">甘肃</button>
+            <button data-id="8">山东</button>
+            <button data-id="9">河北</button>
+            <button data-id="10">山西</button>
+            <button data-id="11">宁夏</button>
+            <button data-id="12">江苏</button>
+            <button data-id="13">河南</button>
+            <button data-id="14">陕西</button>
+            <button data-id="15">上海</button>
+            <button data-id="16">安徽</button>
+            <button data-id="17">湖北</button>
+            <button data-id="18">重庆</button>
+            <button data-id="19">四川</button>
+            <button data-id="20">浙江</button>
+            <button data-id="21">江西</button>
+            <button data-id="22">湖南</button>
+            <button data-id="23">福建</button>
+            <button data-id="24">贵州</button>
+            <button data-id="25">广东</button>
+            <button data-id="26">云南</button>
+            <button data-id="0">新疆</button>
+            <button data-id="0">青海</button>
+            <button data-id="0">西藏</button>
+            <button data-id="0">广西</button>
+        </div>
+    </div>
+    <p class="map_txt"><img src="img/p5_txt.png"/></p>
+    <!--地图弹窗-->
+    <div class="map_pop">
+        <div class="map_pop_img">
+            <p class="map_cs_img"><img src="img/map_img1.png"/></p>
+            <button class="map_pop_but" onclick="window.location.href='http://wxfw.kukahome.com/Serve/Index/edit/ConfigId/2/DJLX/2.html'"><img src="img/map_but.png"/></button>
+        </div>
+        <p class="map_pop_icon" onclick="$('.map_pop').fadeOut();"><img src="img/map_icon.png"/></p>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/mymouse.js" id="mymouse"></script>
+</body>
+
+<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+<script>
+    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        document.getElementById('audio_zt').play();
+    }, false);
+    //音乐播放暂停v
+    var audio = document.getElementById('audio_zt');
+    //audio.volume = 0.1;
+    function playOrPaused(){
+        if(audio.paused){
+            audio.play();
+            document.getElementById("music").className="music_img1";
+            return;
+        }
+        audio.pause();
+        document.getElementById("music").className="music_img2";
+    }
+
+    var tian = 0;
+    var audioPlay = true;
+    function tianyu() {
+        return tian
+    }
+    $(".p1_mb_hover").click(function () {
+        $(this).hide();
+        comeIn();
+    });
+    $(".p4_but").click(function () {
+        map();
+    })
+    function Dialog() {
+        $(".home_inside").fadeOut();
+        $(".Dialog").fadeIn();
+        $(".home_hand").hide();
+        $( ".home_iphone" ).find("img").attr("src","img/iphone.png");
+        var img = new Image();
+        img.src = "img/mother.png";
+        img.onload = function(){
+            setTimeout(function () {
+                var height = img.height;
+                var width = img.width;
+                var heightImg = parseInt($(window).width()/width*height)
+                $(".Dialog_mother_img").height(heightImg);
+                $(".Dialog_mother").height(heightImg);
+            },100);
+        };
+        setTimeout(function () {
+            $(".hand").fadeIn();
+        },2000);
+        $(".hand").click(function () {
+            tian = 1;
+            $(".text1").find("img").attr("src","img/text2.png")
+            $(".Dialog").fadeOut();
+            $(".home_leaflets_guang").show();
+            $(".home_inside").fadeIn();
+            setTimeout(function () {
+                $(".text1").find("img").attr("src","img/text3.png");
+                $(".text1").css({paddingLeft: "5%",paddingRight: "5%"});
+                $(".home_hand").addClass("home_hand2");
+
+                $(".home_hand2").fadeIn();
+                $(".leaflets").click(function () {
+                    $(".home_inside").hide();
+                    star();
+                    //
+                })
+            },1500);
+        })
+    };
+    function comeIn() {
+        $(".p1_bg").hide();
+        $(".home_inside").fadeIn();
+        setTimeout(function () {
+            $(".text1").fadeIn();
+            $( ".home_iphone" ).find("img").attr("src","img/iphone_Vib.png");
+            $(".home_hand").fadeIn();
+            $( ".home_iphone" ).click(function () {
+                clearInterval(iny)
+                Dialog();
+            })
+            var iny = setInterval(function () {
+                $( ".home_iphone" ).effect( "shake",200,20 );
+            },"1000");
+            //
+        },1500)
+    };
+    function star() {
+        tian = 0;
+        $(".p4_div").hide();
+        $(".star").fadeIn();
+        var star = 0;
+        $(".stareople").click(function () {
+            $(".stareople").css("background-image","url(img/star1BgSmF.png)");
+            $(".stareople").removeClass("bounceIn");
+            $(".star_text").remove();
+            star = $(this).data("id");
+            $(this).css("background-image","url(img/star1BgSmT.png)");
+            $(this).append('<img class="star_text" style="position: absolute;bottom: 2px;" src="img/star_text.png">')
+            $(this).addClass("bounceIn");
+            $(".star_hand").fadeIn();
+        });
+        $(".starBtn").click(function () {
+            if(star == 0){
+                alert("请选择活动嘉宾")
+            }else {
+                //console.log(star);
+                $(".star").hide();
+                $(".video").fadeIn();
+                $(".video").css("display","flex");
+                var video6 = document.getElementsByTagName('video')[0];
+                video6.play();
+                if(audio.paused){
+                    audioPlay = false;
+                }else {
+                    audio.pause();
+                }
+
+                if(video6){
+                    video6.loop = false;
+                    video6.addEventListener('ended', function () {
+                        $(".video").hide();
+                        $(".p4_div").fadeIn();
+                        if(audioPlay){
+                            audio.play();
+                        }
+
+                    }, false);
+                }
+            }
+
+        })
+    };
+    function map() {
+        $(".video").hide();
+        $(".map_div").fadeIn();
+        var map = 1;
+        setInterval(function () {
+            if(map==1){
+                $(".map_but button").each(function () {
+                    //console.log(Math.random().toFixed())
+                    $(this).css({boxShadow:"0px 0px 20px 10px #05fffc"});
+                });
+                map = 0;
+            }else {
+                $(".map_but button").each(function () {
+                    //console.log(Math.random().toFixed())
+                    $(this).css({boxShadow:"0px 0px 0px #206697"})
+                });
+                map = 1;
+            }
+        },900);
+        $(".map_but button").on("click",function(){
+            var thisId = $(this).attr("data-id");
+            if(thisId == 0){
+                console.log("空的");
+            }else{
+                $(".map_pop").fadeIn();
+                $(".map_cs_img img").attr("src","img/map_img"+thisId+".png");
+            }
+        })
+    };
+
+</script>
+</html>

@@ -1,0 +1,11 @@
+﻿* { margin: 0; outline: 0; padding: 0; font-size: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+a { text-decoration: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.35); color:#000;}
+html { height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; padding: 0; width: 100%; height: 100%;font-size:100%; min-height: 100%; font-family:"\5FAE\8F6F\96C5\9ED1","\5b8b\4f53", Arial, Helvetica, sans-serif; -webkit-touch-callout: none; display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-align: stretch; position: relative; }
+img {vertical-align: middle; max-width: 100%;height: auto;width: auto\9; /* ie8 */}
+img:not([src*="/"]) { display: none; }
+.hidden{display:none}
+.main{ width:100%;height:100%;min-width:300px; max-width:640px;margin:0 auto;-webkit-box-sizing: border-box; -moz-box-sizing:border-box; position:relative;overflow: hidden;height:auto}
+p,h2{width:93.75%;margin:auto;padding:2% 0;line-height:150%}
+p.k{font-family:"楷体"}
+p.h,p a{}

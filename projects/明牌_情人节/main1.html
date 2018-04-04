@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit" />		<!-- 360开始极速模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />				<!-- IE使用最高模式渲染 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!-- 响应式 -->
+        <meta name="screen-orientation" content="portrait"><!-- 禁止横屏 -->
+		<meta name="x5-orientation" content="portrait"><!-- 禁止横屏 -->
+		<title>录音-明牌</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="m1_bg">
+			<div class="m1_ht">
+				<img src="img/m1_ht_bg1.png" width="100%"/>
+				<div class="m1_ht_bg1"><img src="img/m1_ht_bg2.png" width="100%"/></div>
+				<div class="m1_ht_bg2"><img src="img/m1_ht_bg3.png" width="100%"/></div>
+				<div class="m1_ht_bg3"><img src="img/m1_ht.png" width="100%"/></div>
+				<button class="m1_ht_but"></button>
+			</div>
+			<div class="m1_txt">
+				<img src="img/m1_txt.png"/>
+			</div>
+			
+		</div>
+	
+		<!--录音弹窗-->
+		<div class="recording">
+			<div class="recording_div">
+				<img src="img/m1_bg.png"/>
+				<div class="recording_div_img"><img src="img/m1_txt3.png"/></div>
+			</div>
+			<div class="recording_but">
+				<button class="left" onclick="window.location.href='main2.html'"><img src="img/but4.png"/></button>
+				<button class="right" onclick="$('.recording').css('display','none')"><img src="img/but5.png"/></button>
+			</div>
+		</div>
+		
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+</html>

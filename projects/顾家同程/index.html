@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection">
+	<title>顾家年，启程回家</title>
+	<link rel="stylesheet" href="css/style.css?v=3.1">
+	<link rel="stylesheet" href="css/swiper.min.css" />
+</head>
+<body>
+	<audio id="audio_zt" src="music.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="auto" ></audio>
+	<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+	<!--首页-->	
+	<div class="p1_div">
+		<p class="p1_bg_hover"><img src="img/p1_bg_hover.png"/></p>
+		<!--红包-->
+		<div class="p1_hb">
+			<div class="p1_hb_d">
+				<p class="p1_hb_bg1"><img src="img/p1_hb_bg1.png"/></p>
+				<p class="p1_hb_hb1"><img src="img/p1_hongbao1.png"/></p>
+				<p class="p1_hb_hb2"><img src="img/p1_hongbao2.png"/></p>
+				<p class="p1_hb_hb3"><img src="img/p1_hongbao3.png"/></p>
+				<p class="p1_hb_hc"><img src="img/p1_hc.png"/></p>
+				<p class="p1_hb_hb4"><img src="img/p1_hongbao4.png"/></p>
+				<p class="p1_hb_hb5"><img src="img/p1_hongbao5.png"/></p>
+				<p class="p1_hb_cp"><img src="img/p1_cp.png"/></p>
+			</div>
+			<p class="p1_hb_hc2"><img src="img/p1_hc2.png"/></p>
+			<p class="p1_hb_bg2"><img src="img/p1_hb_bg2.png"/></p>
+			<div class="p1_hb_but">
+				<button class="p1_but"><img src="img/p1_but.png"/></button>
+				<p class="p1_hb_txt">已有<span>19941</span>人成功抢到回家基金</p>
+			</div>
+		</div>
+		<div class="p1_top_img"><img src="img/p1_top_img.png"/></div>
+	</div>
+	<!--首页  end-->
+	<!--游戏-->
+	<div class="p2_div">
+		<p class="p_top_txt">剩余时间<span id="djs">10</span>秒</p>
+		<div id="box"></div>
+		<div class="fail">
+			<p class="fail_icon"><img src="img/p2_hb_k.png"/></p>
+			<p class="fail_txt p2_font">很遗憾</p>
+		</div>
+		<div class="p2_hb_num">
+			<button class="p2_hb_num_icon"><img src="img/p2_db_hb.png"/></button>
+			<p class="p2_hb_num_p">X<span id="p2_hb_num">0</span></p>
+		</div>
+		<p class="p2_div_icon"><img src="img/p2_game_icon.png"/></p>
+	</div>
+	<!--游戏  end-->
+	<!--倒计时-->
+	<div class="djs share_bg">
+		<div class="djs_txt"><img src="img/djs_txt.png"/></div>
+		<p id="CountDown_num">3</p>
+	</div>
+	<!--失败分享-->
+	<div class="share_fill share_bg">
+		<p class="share_fill_icon"><img src="img/share_icon1.png"/></p>
+	</div>
+	<!--卡券分享-->
+	<div class="succes share_bg">
+		<p class="share_fill_icon"><img src="img/share_icon2.png"/></p>
+	</div>
+	<!--红包池-->
+	<div class="p2_pop share_bg2">
+		<div class="p2_pop_div">
+			<img src="img/p2_pop.png" />
+			<div class="p2_pop_div_but">
+				<!--<button><img src="img/p2_hb.png"/></button>
+				<button><img src="img/p2_hb.png"/></button>
+				<button><img src="img/p2_hb.png"/></button>
+				<button><img src="img/p2_hb.png"/></button>
+				<button><img src="img/p2_hb.png"/></button>-->
+			</div>
+			<p class="p2_pop_icon"><img src="img/pop2_icon.png"/></p>
+		</div>
+	</div>
+	<!--信息填写-->
+	<div class="popup popup1">
+		<p class="pop1_bg_hover"><img src="img/pop_bg_hover.png"/></p>
+		<p class="pop1_div_img1"><img src="img/pop1_img3.png"/></p>
+		<p class="pop1_div_img2"><img src="img/pop1_img1.png"/></p>
+		<div class="pop1_tj">
+			<img src="img/pop1_txt_bg1.png"/>
+			<div class="pop1_tj_txt">
+				<input class="pop1_tj_txt_inp1" type="text" placeholder="姓名" />
+				<input class="pop1_tj_txt_inp2" type="text" placeholder="联系方式" />
+				<input class="pop1_tj_txt_inp3" type="text" placeholder="所在城市" />
+			</div>
+			<button class="pop1_but"><img src="img/pop1_but.png"/></button>
+		</div>
+	</div>
+	<!--顾家抵用券-->
+	<div class="popup popup2">
+		<p class="popup2_icon1"><img src="img/fh_icon2.png"/></p>
+		<div class="swiper-container">
+			<p class="popup2_icon4"><img src="img/pop2_hand.png"/></p>
+		    <div class="swiper-wrapper">
+		      	<div class="swiper-slide">
+		      		<p class="popup2_icon"><img src="img/pop2_icon.png"/></p>
+		      		<img src="img/pop2_img1.png"/>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<p class="popup2_icon"><img src="img/pop2_icon.png"/></p>
+		      		<img src="img/pop2_img2.png"/>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<p class="popup2_icon"><img src="img/pop2_icon.png"/></p>
+		      		<img src="img/pop2_img3.png"/>
+		      	</div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		</div>
+		<div class="popup2_icon2"><p class="popup2_icon2_txt">向右滑动</p><span class="popup2_icon3"><img src="img/pop2_hand.png"/></span></div>
+	</div>
+	<!--同城-->
+	<div class="popup popup3">
+		<p class="popup3_icon"><img src="img/fh_icon1.png"/></p>
+		<p class="pop1_bg_hover"><img src="img/pop_bg_hover.png"/></p>
+		<p class="popup3_img1"><img src="img/pop3_img1.png"/></p>
+		<p class="popup3_img2"><img src="img/pop3_img2.png"/></p>
+		<p class="popup3_img6"><img src="img/pop3_img6.png"/></p>
+		<p class="popup3_img3"><img src="img/pop3_img3.png"/></p>
+		<p class="popup3_img4"><img src="img/pop3_img4.png"/></p>
+		<div class="pop3_but">
+			<button class="pop3_but1" onclick="window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx3827070276e49e30&redirect_uri=http://wx.17u.cn/flight/getopenid.html?url=https%3A%2F%2Fwx.17u.cn%2Fhcpzt%2Fcube%2Fcoupons%2F1801051250coupons%2Findex&response_type=code&scope=snsapi_base&state=123#wechat_redirect'"><img src="img/pop3_but1.png"/></button>
+			<button class="pop3_but2" onclick="window.location.href='https://wx.17u.cn/flightactivity/newuservoucher.html?actToken=ZZADUD&redirecttowx=1'"><img src="img/pop3_but2.png"/></button>
+		</div>
+		<p class="popup3_img5"><img src="img/pop3_img5.png"/></p>
+	</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/redrain.js?v=3.1" ></script>
+<script type="text/javascript" src="js/main.js?v=3.1" ></script>
+<script type="text/javascript" src="js/swiper.min.js" ></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+		spaceBetween: 0,
+      	pagination: {
+        	el: '.swiper-pagination',
+        	clickable: true,
+      	},
+    });
+	//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+    document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('audio_zt').play();
+    }, false);
+	//音乐播放暂停v 
+	//audio.volume = 0.1;
+    var audio = document.getElementById('audio_zt');
+	function playOrPaused(){
+		if(audio.paused){
+			audio.play();
+			document.getElementById("music").className="music_img1";
+			return;
+		}
+		audio.pause();
+		document.getElementById("music").className="music_img2";
+	}
+</script>
+</html>

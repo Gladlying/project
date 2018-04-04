@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+	    <link rel="stylesheet" href="css/style.css"/>
+		<title>520</title>
+		<style>
+			.music_img1{width: 60px;height: 60px;position: fixed;top: 25px;right: 25px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background: url(img/music.png) no-repeat;animation: myMusic 2s linear infinite;-webkit-animation: myMusic 2s linear infinite;background-size: 100%;}
+			.music_img2{width: 60px;height: 60px;position: fixed;top: 25px;right: 25px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background:url(img/music.png) no-repeat;background-size: 100%;}	
+			@keyframes myMusic{
+				0%{
+					transform: rotate(0deg); 
+					-webkit-transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			@-webkit-keyframes myMusic{
+				0%{
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}	
+		</style>
+	</head>
+	<body>
+		<!--<audio id="audio" src="audio/yingyue.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>-->
+		<div id="music" class="music music_img1" onclick="playOrPaused();"></div>
+		
+		<div class="ind_bg" style="display: none;">
+			<div class="logo"><img src="img/logo.png" width="100%"/></div>
+			<div class="p1_txt1">
+				<img src="img/p1_txt.png" width="100%"/>
+				<div class="p1_txt2"><img src="img/p1_xinxin.png" width="100%"/></div>
+			</div>
+			<div class="p1_txt3"><img src="img/p1_txt1.png" width="100%"/></div>
+			<div class="p1_chanp"><img src="img/p1_chanp.png" width="100%"/></div>
+			<div class="p1_but"><button id="big"><img src="img/p1_but.png" width="100%"/></button></div>
+		</div> 
+		
+		<div class="p2_bg" >
+			<div class="logo"><img src="img/logo.png" width="100%"/></div>
+			<div class="p2_but">
+				<button class="p2_but1 left" id="my"><img src="img/p2_but1.png" width="100%"/></button>
+				<button class="p2_but1 right" onclick="$('.huodongguize').fadeIn();"><img src="img/p2_but2.png" width="100%"/></button>
+			</div>
+			<div id="main">
+				<div class="sponsorListHolder">
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_chanp.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+					
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_logo.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+					
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_chanp.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+			
+					<div class="sponsor" title="Click to flip"> 
+						<div class="sponsorFlip">
+							<img src="img/p2_logo.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+					
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_chanp.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+			
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_logo.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+					
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_chanp.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+			
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_logo.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+			
+					<div class="sponsor" title="Click to flip">
+						<div class="sponsorFlip">
+							<img src="img/p2_chanp.png"/>
+						</div>
+						<div class="sponsorData"></div>
+					</div>
+			  	</div>
+			</div>
+			<div class="p2_txt" style="display: none;"><img src="img/p2_txt1.png" width="100%"/></div>
+			<div class="p1_but"><button class="kaishi"><img src="img/p1_but.png" width="100%"/></button></div>
+		</div>
+		<!-- 活动规则-->
+		<div class="p2_popup huodongguize" style="display: none;">
+			<div class="huodongguize_div">
+				<div class="p2_icon" onclick="$('.huodongguize').fadeOut();"><img src="img/p2_icon.png"/></div>
+				<img src="img/huodongguize.png" />
+			</div>
+		</div>
+		<!--活动规则end-->
+		<!-- 我的奖品-->
+		<div class="p2_popup me_jiangpin" style="display:none ;">
+			<!-- 已中奖-->
+			<div class="yizhongjiang" style="display: none;">
+				<div class="p2_icon" onclick="$('.me_jiangpin').fadeOut();"><img src="img/p2_icon.png"/></div>
+				<p class="yizhongjiang_p">您已获得明牌好礼<span>吉娃娃项链</span>一份，特别的爱给特别的你！</p>
+			</div>
+			<!-- 未中奖-->
+			<div class="weizhongjiang" style="display: none;">
+				<div class="p2_icon" onclick="$('.me_jiangpin').fadeOut();"><img src="img/p2_icon.png"/></div>
+				<p class="yizhongjiang_p">对不起，您尚未中过任何奖品。 据说这里藏着不止520个奖品~</p>
+			</div>
+		</div>
+		<!--我的奖品end-->
+		<!-- 吉娃娃项链-->
+		<div class="p2_popup jiewawa" style="display: none;">
+			<div class="jiewawa_div">
+				<img src="img/p2_jp1.png" width="100%"/>
+				<div class="p2_icon1" onclick="$('.jiewawa').fadeOut();"><img src="img/p2_icon2.png"/></div>
+				<button class="p2_but3" id="jiwawa"><img src="img/p2_but3.png" width="100%"/></button>
+			</div>
+		</div>
+		<!--吉娃娃项链end-->
+		<!-- 签名照-->
+		<div class="p2_popup qianmingzhao" style="display: none;">
+			<div class="jiewawa_div">
+				<img src="img/p2_jp2.png" width="100%"/>
+				<div class="p2_icon1" onclick="$('.qianmingzhao').fadeOut();"><img src="img/p2_icon2.png"/></div>
+				<button class="p2_but3" id="qianmingz"><img src="img/p2_but3.png" width="100%"/></button>
+			</div>
+		</div>
+		<!--签名照end-->
+		<!-- 对戒购买资格-->
+		<div class="p2_popup duijie" style="display: none;">
+			<div class="jiewawa_div">
+				<img src="img/p2_jp5.png" width="100%"/>
+				<div class="p2_icon1" onclick="$('.duijie').fadeOut();"><img src="img/p2_icon2.png"/></div>
+				<button class="p2_but3" id="duijie"><img src="img/p2_but3.png" width="100%"/></button>
+			</div>
+		</div>
+		<!--对戒购买资格end--> 
+		<!-- 抵用券-->
+		<div class="p2_popup diyongquan" style="display: none;">
+			<div class="diyongquan_div">
+				<div class="quan">
+					<p class="quan_p1"><span>520</span>元</p>
+				</div>
+				<div class="quan_txt"><img src="img/p2_txt2.png"/></div>
+				<p class="quan_p2"><img src="img/520.png"/></p>
+				<p class="quan_p3"><img src="img/p2_jp_zs.png"/></p>
+				<div class="p2_icon1" onclick="$('.diyongquan').fadeOut();" style="top: 105px;"><img src="img/p2_icon2.png"/></div>
+				<button class="p2_but3"><img src="img/p2_but3.png" width="100%"/></button>
+			</div>
+		</div>
+		<!--抵用券end-->
+		<!-- 抽奖失败-->
+		<div class="p2_popup shibai" style="display:none ;">
+			<div class="shibai_div">
+				<img src="img/p2_jp6.png" width="100%"/>
+				<div class="p2_icon1" onclick="$('.shibai').fadeOut();" style="top: 106px;"><img src="img/p2_icon2.png"/></div>
+				<button class="p2_but3"><img src="img/p2_but6.png" width="100%"/></button>
+			</div>
+		</div>
+		<!--抽奖失败end-->
+		<!-- 填写信息-->
+		<div class="p2_popup information" style="display:none;">
+			<div class="information_div">
+				<div class="p2_icon1" onclick="$('.information').fadeOut();" style="top: 106px;"><img src="img/p2_icon2.png"/></div>
+				<p class="information_txt"><img src="img/p2_jp4_ds.png"/></p>
+				<div class="information_input">
+					<input type="text" class="input" placeholder="输入真实姓名"/>
+					<input type="text" class="input" placeholder="输入手机号"/>
+				</div>
+				<p class="information_txt2"><img src="img/p2_jp4_ds2.png"/></p>
+				<div class="p2_but4">
+					<button><img src="img/p2_but4.png"/></button>
+					<button style="margin-left: 20px;"><img src="img/p2_but5.png"/></button>
+				</div>
+			</div>
+		</div>
+		<!--填写信息end-->
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/jquery.flip.min.js" ></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+	<script>
+		//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+	    //音乐播放暂停  
+//		var audio = document.getElementById('audio');
+//		function playOrPaused(){
+//			if(audio.paused){
+//				audio.play();
+//				document.getElementById("music").className="music_img1";
+//				return;
+//			}
+//			audio.pause();
+//			document.getElementById("music").className="music_img2";
+//		}
+		$(function(){
+			$("#big").click(function(){
+				$(".ind_bg").fadeOut();
+				$(".p2_bg").fadeIn();
+			})
+			$("#my").click(function(){
+				$(".me_jiangpin").fadeIn();
+				$(".yizhongjiang").fadeIn();	//中奖的
+				//$(".weizhongjiang").fadeIn();	//未中奖的
+			})
+			//吉娃娃项链信息填写
+			$("#jiwawa").click(function(){
+				$(".jiewawa").fadeOut();
+				$(".information").fadeIn();
+			})
+			//签名照信息填写
+			$("#qianmingz").click(function(){
+				$(".qianmingzhao").fadeOut();
+				$(".information").fadeIn();
+			})
+			//对戒购买资格
+			$("#duijie").click(function(){
+				$(".duijie").fadeOut();
+				$(".information").fadeIn();
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* CSS Document */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, span { margin: 0; padding: 0px; -webkit-touch-callout: none; -webkit-user-select: none }
+body { font: 12px/1.5 Microsoft YaHei, tahoma, simsun, sans-serif; color: #1a5e77; -webkit-tap-highlight-color: rgba(0,0,0,0) }
+body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+img { border: none; padding: 0; margin: 0; }
+em, i, b { font-style: normal }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+a { text-decoration: none }
+a:hover { text-decoration: none; }
+table { border-collapse: collapse; border-spacing: 0 }
+input, select, option, button { outline: none }
+html, body{ height: 100%; zoom: 1; position: relative; width: 100%; }
+/*index1*/
+.x_index_bg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	background: url(../img/p1_01.jpg) no-repeat;
+	background-size: 100% 100%;
+	min-width:300px; 
+	max-width:640px;
+}
+.x_index_but{
+	margin:0% auto 0 auto;
+}
+.x_index_but1{
+	position: absolute;
+	bottom: 23%;
+	left: 32%;
+}
+.x_index_but button{
+	background: none;
+	border: none;
+}
+.x_index_but button img{
+	width: 231px;
+	height: 64px;
+}
+.x_prize_but{
+	margin:0% auto 0 auto;
+}
+.x_prize_but1{
+	position: absolute;
+	bottom: 10%;
+	left: 11%;
+}
+.x_prize_but button{
+	background: none;
+	border: none;
+}
+.x_prize_but button img{
+	width: 186px;
+	height: 54px;
+}
+.x_prize_back{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99;
+	background: rgba(0,0,0,0.7);
+	display: none;
+	min-width: 300px;
+    max-width: 640px;
+}
+.x_close{
+	position: absolute;
+	top:10%;
+	left:82%;
+}
+.x_prize_box{
+	position: relative;
+	margin: 230px 110px 0 0;
+	width: 520px;
+	height: 573px;
+}
+.x_prize_box_img{
+	position: absolute;
+	width: 520px;
+	height: 573px;
+}
+.x_prize_close{
+	width: 49px;
+    height: 45px;
+    margin: 175px 116px 10px 0;
+    float: right;
+}
+.x_prize_close img{
+	width: 49px;
+	height: 45px;
+}
+.x_rule_but{
+	margin:0% auto 0 auto;
+}
+.x_rule_but1{
+	position: absolute;
+	bottom: 10%;
+	left: 59%;
+}
+.x_rule_but button{
+	background: none;
+	border: none;
+}
+.x_rule_but button img{
+	width: 186px;
+	height: 54px;
+}
+.x_rule_back{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99;
+	background: rgba(0,0,0,0.7);
+	display: none;
+}
+.x_rule_box{
+	position: absolute;
+	top:15%;
+	left:12%;
+	width: 498px;
+	height: 676px;
+}
+.d_zj{
+	width: 374px;
+	height: auto;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 165px;
+	margin-left: 129px;
+	color: #78384c;
+	font-family: "黑体";
+	font-size: 34px;
+	line-height: 60px;
+}
+.x_prize_box_zjd{
+	position: relative;
+	width: 372px;
+	height: auto;
+	margin: 166px 0 0 134px;
+	text-align: center;
+	color: #78384c;
+	font-size: 32px;
+	font-family: "黑体";
+	line-height: 44px;
+}
+/***********puzzle*************/
+.puz_bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/pz_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	min-width:300px; 
+	max-width:640px;
+}
+.d_puz_logo{
+	width: 221px;
+	height: 40px;
+	margin: 35px 0 0 35px;
+}
+.d_puz_but1{
+	text-align: center;
+	margin-top: 54px;
+}
+.d_puz_but1_but{
+	width: 356px;
+	height: 64px;
+	background: url(../img/d_but2.png) no-repeat;
+	background-size:100%;
+	font-family: "黑体";
+	color: #0e2044;
+	font-size: 40px;
+}
+.d_rule_back{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	top: 0;
+	display: none;
+	min-width: 300px;
+    max-width: 640px;
+}
+.d_close{
+	width: 49px;
+	height: 45px;
+	margin: 100px 40px 10px 0;
+	float: right;
+}
+.d_rule_box{
+	width: 496px;
+	height: 674px;
+	margin: auto;
+}
+.d_puz_but2{
+	width: 234px;
+	height: 68px;
+}
+.CountDown{
+    font-family: "黑体";
+    color: #fff;
+    font-size: 40px;
+    margin-top: 54px;
+    margin-bottom: 4px;
+}
+#CountDown_num{
+    font-weight: bold;
+    color: #fe0000;
+}
+.addimg{
+    position: absolute;
+    z-index: 100;
+    top: 23px;
+}
+.puz_yt{
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background: #00479c;
+	border: 4px solid #00479c;
+}
+/***********prize*************/
+.pri_bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/p3_01.jpg) no-repeat;
+	background-size: 100% 100%;
+	min-width:300px; 
+	max-width:640px;
+}
+.pri_tsk{
+	width: 611px;
+	height: 285px;
+	margin: 100px auto 30px auto;
+}
+.pri_but{
+	text-align: center;
+	margin-top: 30px;
+}
+.pri_but button{
+	width: 237px;
+	height: 65px;
+	background: none;
+	border: none;
+}
+.d_par_zj{
+	width: 496px;
+	height: 674px;
+	margin:auto;
+	background: url(../img/p3_jp_bg.png) no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+.d_par_chose{
+	width: 49px;
+    height: 45px;
+    margin: 100px 0 10px 520px;
+}
+.d_par_wcz{
+	width: 496px;
+	height: 674px;
+	margin:auto;
+}
+.d_par_sx{
+	width: 440px;
+	height: 605px;
+	margin:auto;
+}
+.d_par_kq_img{
+	width: 391px;
+	height: 191px;
+	margin: 106px auto 60px auto;
+}
+.d_par_kq_txt{
+	width: 351px;
+	height: 220px;
+	margin: auto;
+}
+.register_mas {
+    width: 55%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    top: 40%;
+    left: 22.5%;
+    color: #FFFFFF;
+    padding: 4% 2%;
+    font-size: 35px;
+    font-family: "微软雅黑";
+    text-align: center;
+    margin: 0;
+}
+.par_jp{
+	width: 187px;
+	height: 188px;
+	margin: 28px auto 14px auto;
+}
+.par_zyth_txt{
+	width:389px ;
+	height: 143px;
+	margin: auto;
+}
+.pri_submit{
+	overflow: hidden;
+	margin: 25px auto 0 auto;
+}
+.pri_submit_txt{
+	width: 296px;
+	height: 22px;
+	margin:0 auto 28px auto;
+}
+.pri_submit_bd{
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.pri_submit_bd p{
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+.pri_submit_bd_inp{
+	background: #ffb8cc;
+	width: 288px;
+	height: 42px;
+	line-height: 42px;
+	text-indent: 12px;
+	border-radius: 5px;
+	border: none;
+	float: left;
+	font-size: 24px;
+}
+.pri_submit_bd_txt{
+	display: inline-block;
+	width: 69px;
+	height: 30px;
+	margin: 7px 22px 0 58px;
+	float: left;
+}
+.pri_submit_but{
+	width: 188px;
+	height: 55px;
+	background: none;
+	border: none;
+}
+.par_jp2{
+	width: 286px;
+	height: 164px;
+	margin: 28px auto 14px auto;
+}
+.par_zyth_txt2{
+	width:302px ;
+	height: 143px;
+	margin: auto;
+}

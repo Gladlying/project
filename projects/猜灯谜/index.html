@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection">
+    <title>猜灯谜</title>
+    <link rel="stylesheet" type="text/css" href="css/main_2.css" />
+</head>
+
+<body>
+	<!--<audio id="audio" src="audio/bg.mp3" autoplay loop></audio>-->
+	<!--首页-->
+	<div class="page page01">
+    	<div class="logo02"></div>
+        <div class="main">
+        	<div class="top"></div>
+            <div class="cen"></div>
+            <div class=" deng deng01 yoyo"></div>
+            <div class=" deng deng02 yoyo"></div>
+            <div class="deng deng03 yoyo"></div>
+            <div class="deng deng04 yoyo"></div>
+        	<div class=" btn btn_01 yoyo2"></div>
+        	<div class=" btn btn_02 yoyo2"></div>
+        </div>
+    	<div class="lang"></div>
+   </div>
+    <!--活动规则页面-->
+    <div class=" page fix none" id="gz" style="background: rgba(0,0,0,0.5);">
+        <div class="pop close">
+            <!--<a href="#" class="close"></a>-->
+        </div>
+    </div>
+    <!--答题页面-->
+    <div class="page page02 none">
+    	<div class="title"></div>
+        <div class="sheng"></div>
+        <div class="deng deng01 yoyo"></div>
+        <div class="deng deng02 yoyo"></div>
+        <div class="deng deng03 yoyo"></div>
+        <div class="deng deng04 yoyo"></div>
+        <div class="ban">
+        	<p class="num"><span id="di">01</span>/5</p>
+            <a href="#" class="fq">放弃本题</a>
+        </div>
+        <div class="answer_box">
+        </div>
+        <div class="text_box">
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        	<span></span>
+            <a href="#" class="sure"></a>
+        </div>
+        <div class="dui none"></div>
+        <div class="cuo none"></div>
+    </div>
+    <!--结果页面-->
+    <div class="page page03 none">
+    	<div class="title"></div>
+        <div class="sheng"></div>
+        <div class=" deng deng01 yoyo"></div>
+        <div class=" deng deng02 yoyo"></div>
+        <div class="deng deng03 yoyo"></div>
+        <div class="deng deng04 yoyo"></div>
+        <div class="false none">
+        	<span>哎呦，猜错太多啦！再加把劲，<br/>鸡年就要鸡鸡向上！</span>
+            <div class="bot">
+                <div class="hou"></div>
+            </div>
+            <a href="#" class="btn btn_again"></a>
+        </div>
+        <div class="true none">
+        	<span>干得漂亮，你击败了90%的鸡友，快来试试你的手气！</span>
+            <div class="con">
+                <div class="bg zhuan02"></div>
+                <div class="hou2"></div>
+            </div>
+            <a href="#" class="btn2 btn_share"></a>
+        </div>
+        <div class="lang"></div>
+    </div>
+    <!---中奖--->
+    <div class="x_page">
+    	
+    	<div class="x_page_one none x_page1">
+    		<div class="x_bg">
+    			<div  class="x_bg_but">
+    				<button style="float: left;" onclick="$('.x_page_one').hide();"><img src="images/f1_02.png" width="100%"/></button>
+    				<button style="float: right;" class="btn_again"><img src="images/f1_03.png" width="100%"/></button>
+    			</div>
+    		</div>
+    	</div><!---啥也没中--->
+    	<div class="x_page_one none x_page2">
+    		<div class="x_bg3">
+    			<div  class="x_bg_but">
+    				<button class="x_receive6"><img src="images/f2_02.png" width="100%"/></button>
+    			</div>
+    		</div>
+    	</div><!---格瓦拉60元--->
+    	<div class="x_page_one none x_page3">
+    		<div class="x_bg4">
+    			<div  class="x_bg_but">
+    				<button class="x_receive3"><img src="images/f2_02.png" width="100%"/></button>
+    			</div>
+    		</div>
+    	</div><!---格瓦拉30元--->
+    	<div class="x_page_one none x_lq">
+    		<div class="x_bg5">
+    			<div class="x_page_top">格瓦拉<span>30</span>元券！  </div>
+    			<div  class="x_bg_sm">
+    				<div><span>【卡号】：</span><span>11111111111111</span></div>
+    				<div><span>【密码】：</span><span>11111111111111</span></div>
+    				<div><span>【使用方法】：：</span></div>
+    				<div>
+    					下载格瓦拉APP，购买电影票支付时选择点卡支付，输入抵用券密码，完成支付，可直接抵用30元（60元）现金。
+    				</div>
+    				<p style="color: #ffc909;margin-bottom: 50px;">PS：请注意保存好你的中奖信息。</p>
+    				<div style="margin-bottom: 50px;font-size: 22px;">
+    					关注“华润雪花啤酒浙江””华润雪花啤酒福建“官方微信公众号，更多福利好礼等着您。
+    				</div>
+    			</div>
+    			<div  class="x_bg_but2">
+    				<button class="x_refresh"><img src="images/f5_02.png" width="100%"/></button>
+    			</div>
+    		</div>
+    	</div><!---格瓦拉30或60元领取--->
+    	
+    </div>
+    
+    <div class="page fix none" id="zj">
+    	<div class="zj_cen zj_01 none">
+        	<span class="gb"></span>
+        </div>
+    	<div class="zj_cen zj_02 none">
+        	<span class="gb"></span>
+        </div>
+    	<div class="zj_cen zj_03 none">
+        	<span class="gb"></span>
+        </div>
+    </div>
+    </div>
+ 
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+	<script src="js/tweenmax.min_2.js"></script>
+	<script>
+	    var wxUrl  = "http://apps.hylinkxa.com/Home/Hylink/Common/weixin";
+	    var linkJs = "http://apps.hylinkxa.com/Home/Hylink/Caidengmi/index";
+	    var imgUrlJs = "http://apps.hylinkxa.com/Public/Home/Hylink/caidengmi/img/small.jpg";
+	    var ajaxAddUserUrl = "/Home/Hylink/Caidengmi/ajaxAddUser";
+	     $(function(){
+	     	$(".x_refresh").click(function(){
+	     		location.reload();
+	     	})
+	     })
+	</script>
+	<script src="js/app_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit" />		<!-- 360开始极速模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />				<!-- IE使用最高模式渲染 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!-- 响应式 -->
+        <meta name="screen-orientation" content="portrait"><!-- 禁止横屏 -->
+		<meta name="x5-orientation" content="portrait"><!-- 禁止横屏 -->
+		<title>首页-明牌</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			.music_img1{
+				width: 40px;
+				height: 40px;
+				position: fixed;
+				top: 10px;
+			    right: 10px;
+				z-index: 9999;
+				background: #FFFFFF;
+				border-radius: 50%;
+				background: url(img/music.jpg) no-repeat;
+				animation: myMusic 2s linear infinite;
+				-webkit-animation: myMusic 2s linear infinite;
+				background-size: 100%;
+			}
+			.music_img2{
+				width: 40px;
+				height: 40px;
+				position: fixed;
+				top: 10px;
+			    right: 10px;
+				z-index: 9999;
+				background: #FFFFFF;
+				border-radius: 50%;
+				background:url(img/music2.jpg) no-repeat;
+				background-size: 100%;
+			}	
+			@keyframes myMusic{
+				0%{
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			@-webkit-keyframes myMusic{
+				0%{
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}	
+		</style>
+	</head>
+	<body>
+		<audio id="audio" src="audio/music.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>
+		<div id="music" class="music music_img1" onclick="playOrPaused();"></div>
+		<div class="ind_bg">
+			<div class="ind_txt">
+				<p class="ind_txt1"><img src="img/ind_txt1.png" width="100%"/></p>
+				<p class="ind_txt2"><img src="img/ind_txt2.png" width="100%"/></p>
+				<p class="ind_txt3"><img src="img/ind_txt3.png" width="100%"/></p>
+				<p class="ind_txt4"><img src="img/ind_txt4.png" width="100%"/></p>
+				<p class="ind_txt5"><img src="img/ind_txt5.png" width="100%"/></p>
+				<p class="ind_txt6"><img src="img/ind_txt6.png" width="100%"/></p>
+				<p class="ind_txt7"><img src="img/ind_txt7.png" width="100%"/></p>
+				<p class="ind_txt8"><img src="img/ind_txt8.png" width="100%"/></p>
+			</div>
+			<div class="ind_but ind_but1"><button onclick="$('.activity_rule').show();"><img src="img/but2.png"/></button></div>
+		</div>
+		
+		<!--活动规则-->
+		<div class="activity_rule">
+			<div class="rule_txt"><img src="img/m1_txt2.png"/></div>
+			<div class="ind_but ind_but1"><button onclick="window.location.href='main1.html'"><img src="img/but1.png"/></button></div>
+		</div>
+		
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script> 
+	    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+	    
+	</script>
+</html>

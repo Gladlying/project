@@ -1,0 +1,573 @@
+.swing3{
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right;
+	-webkit-animation-name: swing3;
+	animation-name: swing3;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes swing3 {
+	20% {
+		-webkit-transform: rotate3d(0,0,1,15deg);
+		transform: rotate3d(0,0,1,15deg)
+	}
+	40% {
+		-webkit-transform: rotate3d(0,0,1,-10deg);
+		transform: rotate3d(0,0,1,-10deg)
+	}
+	60% {
+		-webkit-transform: rotate3d(0,0,1,5deg);
+		transform: rotate3d(0,0,1,5deg)
+	}
+	80% {
+		-webkit-transform: rotate3d(0,0,1,-5deg);
+		transform: rotate3d(0,0,1,-5deg)
+	}
+	100% {
+		-webkit-transform: rotate3d(0,0,1,0deg);
+		transform: rotate3d(0,0,1,0deg)
+	}
+}
+@keyframes swing3 {
+	20% {
+		-webkit-transform: rotate3d(0,0,1,15deg);
+		transform: rotate3d(0,0,1,15deg)
+	}
+	40% {
+		-webkit-transform: rotate3d(0,0,1,-10deg);
+		transform: rotate3d(0,0,1,-10deg)
+	}
+	60% {
+		-webkit-transform: rotate3d(0,0,1,5deg);
+		transform: rotate3d(0,0,1,5deg)
+	}
+	80% {
+		-webkit-transform: rotate3d(0,0,1,-5deg);
+		transform: rotate3d(0,0,1,-5deg)
+	}
+	100% {
+		-webkit-transform: rotate3d(0,0,1,0deg);
+		transform: rotate3d(0,0,1,0deg)
+	}
+}
+.shake1{
+	-webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: shake1;
+    animation-name: shake1;
+}
+@-webkit-keyframes shake1 {
+	0%,50% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	2%,6%,10%,14%,18%,22%,26%,30%,34%,38%,42%,46% {
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	4%,8%,12%,16%,20%,24%,28%,32%,36%,40%,44%,48% {
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+@keyframes shake1 {
+	0%,50% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	2%,6%,10%,14%,18%,22%,26%,30%,34%,38%,42%,46% {
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	4%,8%,12%,16%,20%,24%,28%,32%,36%,40%,44%,48% {
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+.shake2{
+	-webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: shake2;
+    animation-name: shake2;
+}
+@-webkit-keyframes shake2 {
+	50% ,100%{
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	52%,56%,60%,64%,68%,72%,76%,80%,84%,88%,92%,96% {
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	54%,58%,62%,66%,70%,74%,78%,82%,86%,90%,94%,98% {
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+}
+@keyframes shake2 {
+	50% ,100%{
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	52%,56%,60%,64%,68%,72%,76%,80%,84%,88%,92%,96% {
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	54%,58%,62%,66%,70%,74%,78%,82%,86%,90%,94%,98% {
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+}
+.tiandun{
+	-webkit-animation: tiandun 3s infinite ease-out;
+	animation: tiandun 3s infinite ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes tiandun {
+	0%,20% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	5%,15%,30%,40%,70%,80%,90%{
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	10%,25%,35%,45%,75%,85%,80%{
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+	50%,60%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+@keyframes tiandun {
+	0%,20% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	5%,15%,30%,40%,70%,80%,90%{
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	10%,25%,35%,45%,75%,85%,80%{
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+	50%,60%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+.peo{
+	-webkit-animation: peo 1.5s infinite ease-out;
+	animation: peo 1.5s infinite ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes peo {
+	0%,40% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	5%,15%,30%,55%,70%,80%,90%{
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	10%,25%,35%,60%,75%,85%,80%{
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+	90%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+@keyframes peo {
+	0%,40% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	5%,15%,30%,55%,70%,80%,90%{
+		-webkit-transform: translate3d(-6px,0,0);
+		transform: translate3d(-6px,0,0)
+	}
+	10%,25%,35%,60%,75%,85%,80%{
+		-webkit-transform: translate3d(6px,0,0);
+		transform: translate3d(6px,0,0)
+	}
+	90%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+.tab{
+	-webkit-animation: tab 3s infinite ease-out;
+	animation: tab 3s infinite ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes tab {
+	0%,40% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+	5%,15%,30%,55%,70%,80%,90%{
+		-webkit-transform: translate3d(0,-6px,0);
+		transform: translate3d(0,-6px,0);
+		opacity: 0;
+	}
+	10%,25%,35%,60%,75%,85%,80%{
+		-webkit-transform: translate3d(0,6px,0);
+		transform: translate3d(0,6px,0);
+		opacity: 1;
+	}
+	90%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+@keyframes tab {
+	0%,40% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+	5%,15%,30%,55%,70%,80%,90%{
+		-webkit-transform: translate3d(0,-6px,0);
+		transform: translate3d(0,-6px,0);
+		opacity: 0;
+	}
+	10%,25%,35%,60%,75%,85%,80%{
+		-webkit-transform: translate3d(0,6px,0);
+		transform: translate3d(0,6px,0);
+		opacity: 1;
+	}
+	90%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+.number{
+	-webkit-animation: number 2s infinite;
+	animation: number 2s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@keyframes number {
+	20% {
+		background:url(../img/p3_number1.png) no-repeat;
+	}
+	50% {
+		background: url(../img/p3_number2.png) no-repeat;
+	}
+	70%{
+		background: url(../img/p3_number3.png) no-repeat;
+	}
+	100% {
+		background: url(../img/p3_number4.png) no-repeat;
+	}
+}
+@-webkit-keyframes number {
+	20% {
+		background: url(../img/p3_number1.png) no-repeat;
+	}
+	50% {
+		background: url(../img/p3_number2.png) no-repeat;
+	}
+	70%{
+		background: url(../img/p3_number3.png) no-repeat;
+	}
+	100% {
+		background: url(../img/p3_number4.png) no-repeat;
+	}
+}
+.yaoyiyao{
+	animation:grow 0.5s 0.4s 1 ease, music-move 0.5s 1.5s infinite alternate ease-in-out;
+  	-webkit-animation:grow 0.5s 0.4s 1 ease, music-move 0.5s 1.5s infinite alternate ease-in-out;
+  	transform-origin: bottom;
+  	-webkit-transform-origin: bottom;
+}
+@keyframes grow
+{
+	0% {  
+	  	-webkit-transform: scale(0);
+	  	transform: scale(0);
+	}
+	60% {  
+	  	-webkit-transform: scale(1.15);
+	  	transform: scale(1.15);
+	}
+	80% {  
+	  	-webkit-transform: scale(0.95);
+	  	transform: scale(0.95);
+	}
+	100% {
+	  	-webkit-transform: scale(1);
+	  	transform: scale(1);
+	}
+}
+
+@-webkit-keyframes grow /* Safari and Chrome */
+{
+	0% {  
+	  	-webkit-transform: scale(0);
+	  	transform: scale(0);
+	}
+	60% {  
+	  	-webkit-transform: scale(1.15);
+	  	transform: scale(1.15);
+	}
+	80% {  
+	  	-webkit-transform: scale(0.95);
+	  	transform: scale(0.95);
+	}
+	100% {
+	  	-webkit-transform: scale(1);
+	  	transform: scale(1);
+	}
+}
+@keyframes music-move
+{
+	0% { 
+	  	-webkit-transform: rotate(0deg);
+	  	transform: rotate(0deg);
+	} 
+	33% {  
+	  	-webkit-transform: rotate(-5deg);
+	  	transform: rotate(-5deg);
+	}
+	66% {  
+	 	-webkit-transform: rotate(5deg);
+	  	transform: rotate(5deg);
+	}
+	100% {  
+	  	-webkit-transform: rotate(0deg);
+	  	transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes music-move /* Safari and Chrome */
+{
+	0% { 
+	  	-webkit-transform: rotate(0deg);
+	  	transform: rotate(0deg);
+	}
+	33% {  
+	  	-webkit-transform: rotate(-5deg);
+	  	transform: rotate(-5deg);
+	}
+	66% {  
+	  	-webkit-transform: rotate(5deg);
+	  	transform: rotate(5deg);
+	}
+	100% {  
+	  	-webkit-transform: rotate(0deg);
+	  	transform: rotate(0deg);
+	}
+}
+.shake3 {
+	animation:shake3 5s infinite ease-out both;
+	-webkit-animation:shake3 5s infinite ease-out both;
+}
+@-webkit-keyframes shake3 {
+	0%,25% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	2%,6%,10%,14%,18%,22% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	4%,8%,12%,16%,20%,24% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+@keyframes shake3 {
+	0%,25% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	2%,6%,10%,14%,18%,22% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	4%,8%,12%,16%,20%,24% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+.shake4 {
+	animation:shake4 5s infinite ease-out both;
+	-webkit-animation:shake4 5s infinite ease-out both;
+}
+@-webkit-keyframes shake4 {
+	0%,25% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	25%,50% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	26%,30%,34%,38%,42%,46% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	28%,32%,36%,40%,44%,48% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+@keyframes shake4 {
+	0%,25% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	25%,50% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	26%,30%,34%,38%,42%,46% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	28%,32%,36%,40%,44%,48% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+.shake5 {
+	animation:shake5 5s infinite ease-out both;
+	-webkit-animation:shake5 5s infinite ease-out both;
+}
+@-webkit-keyframes shake5 {
+	0%,50% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	50%,75% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	54%,58%,62%,66% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	52%,56%,60%,64%,68% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+@keyframes shake5 {
+	0%,50% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	50%,75% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	54%,58%,62%,66%,70%,74% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	52%,56%,60%,64%,68%,72% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+	100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+}
+.shake6 {
+	animation:shake6 5s infinite ease-out both;
+	-webkit-animation:shake6 5s infinite ease-out both;
+}
+@-webkit-keyframes shake6 {
+	0%,75% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	75%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	78%,82%,86%,90%,94%,98% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	76%,80%,84%,88%,92%,96% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+}
+@keyframes shake6 {
+	0%,75% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	75%,100% {
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0)
+	}
+	78%,82%,86%,90%,94%,98% {
+		-webkit-transform: translate3d(-3px,0,0);
+		transform: translate3d(-3px,0,0)
+	}
+	76%,80%,84%,88%,92%,96% {
+		-webkit-transform: translate3d(3px,0,0);
+		transform: translate3d(3px,0,0)
+	}
+}

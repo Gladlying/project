@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>明牌</title>
+<!-- 移动设备支持 -->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+</head>
+<body>
+<div id="div_fx_describe" style="display:none;">test</div>
+<div class="p-index main" id="con"> 
+   <!-- <canvas id="cas" style="opacity:0.9"></canvas>  上下滚动 start-->
+        <section  class="m-page hide one ">
+            <div style='position:relative'>    
+                <img src="fugai/p3_01.jpg">
+            </div>
+            <div id="divContainer" style='position:relative'>
+                <img src="fugai/p3_02.jpg">
+                <div class='sel_box_one'>
+                    <select id="select_1" class="happiness"  >
+                        <option data-id='很高兴遇见TA' value="很高兴遇见TA"><div style='margin:0px auto;'>很高兴遇见TA</div></option>
+                        <option value="意想不到的礼物">意想不到的礼物</option>
+                        <option value="那顿好吃的晚餐">那顿好吃的晚餐</option>
+                        <option value="一次难忘的旅行">一次难忘的旅行</option>
+                        <option value="好久未有的拥抱">好久未有的拥抱</option>
+                        <option value="无话不说的那个晚上">无话不说的那个晚上</option>
+                    </select>
+                </div>
+                <div id='tianyu' class='sel_box_two'>
+                    <select  id="select_2" class="happiness" parentId="select_1" >
+                        <option value="那顿好吃的晚餐"><div style='margin:0px auto;'>那顿好吃的晚餐</div></option>
+                        <option value="很高兴遇见TA">很高兴遇见TA</option>
+                        <option value="一次难忘的旅行">一次难忘的旅行</option>
+                        <option value="好久未有的拥抱">好久未有的拥抱</option>
+                        <option value="无话不说的那个晚上">无话不说的那个晚上</option>
+                    </select>
+                </div>
+                <div id='tianyu' class='sel_box_three'>
+                    <select  id="select_3" class="happiness" parentId="select_2" >
+                        <option data-id='一次难忘的旅行' value="一次难忘的旅行"><div style='margin:0px auto;'>一次难忘的旅行</div></option>
+                        <option value="意想不到的礼物">意想不到的礼物</option>
+                        <option value="那顿好吃的晚餐">那顿好吃的晚餐</option>
+                        <option value="很高兴遇见TA">很高兴遇见TA</option>
+                        <option value="好久未有的拥抱">好久未有的拥抱</option>
+                        <option value="无话不说的那个晚上">无话不说的那个晚上</option>
+                    </select>
+                </div>
+                <div class='sel_date_one'>
+                    <select id="birth_year" class="year" onchange="setDays(this,birth_month,birth_day);">  
+                        <option value="" >－－年</option>  
+                    </select>
+                    <select id="birth_month" class="month" onchange="setDays(birth_year,this,birth_day);">  
+                        <option value="" >－月</option>  
+                    </select>
+                    <select id="birth_day" class="data">  
+                        <option value="" >－日</option>  
+                    </select>
+                </div>
+                <div class='sel_date_two'>
+                    <select id="birth_year2" class="year" onchange="setDays(this,birth_month2,birth_day2);">  
+                        <option value="" >－－年</option>  
+                    </select>
+                    <select id="birth_month2" class="month" onchange="setDays(birth_year2,this,birth_day2);">  
+                        <option value="" >－月</option>  
+                    </select>
+                    <select id="birth_day2" class="data">  
+                        <option value="" >－日</option>  
+                    </select>
+                </div>
+                <div class='sel_date_three'>
+                    <select id="birth_year3" class="year" onchange="setDays(this,birth_month3,birth_day3);">  
+                        <option value="" >－－年</option>  
+                    </select>
+                    <select id="birth_month3" class="month" onchange="setDays(birth_year3,this,birth_day3);">  
+                        <option value="" >－月</option>  
+                    </select>
+                    <select id="birth_day3" class="data">  
+                        <option value="" >－日</option>  
+                    </select>
+                </div>
+
+            </div>
+            <div style='position:relative'>    
+                <img src="fugai/p3_03.jpg">
+            </div>
+            <div style='position:relative'>    
+                <img src="fugai/p3_04.jpg">
+                <input class="button_select" id="sel_sign_in" type="button" >
+            </div>
+            <div style='position:relative'>    
+                <img src="fugai/p3_05.jpg">
+            </div>
+        </section>
+        
+    <!--上下滚动代码 end-->
+</div>
+</body>
+
+</html>

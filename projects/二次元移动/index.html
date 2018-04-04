@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--<audio id="audio" src="audio/yingyue.mp3"  style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>-->
+		<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	        	<!--1-->
+	            <div class="swiper-slide">
+	            	<span class="logo"><img src="img/logo.png" width="100%"/></span>
+	            	<div class="p1_box">
+	            		<span class="p1_icon1 swing3"><img src="img/p1_icon1.png" width="100%"/></span>
+	            		<span class="p1_icon2 shake1"><img src="img/p1_icon2.png" width="100%"/></span>
+	            		<p class="p1_txt"><img src="img/p1_txt.png" width="100%"/></p>
+	            		<p class="p1_people shake2"><img src="img/p1_people.png" width="100%"/></p>
+	            	</div>
+	            	<button class="p1_but"><img src="img/p1_but.png" width="100%"/></button>
+	            	<p class="p1_icon3"><img src="img/icon.png" width="100%"/></p>
+	            </div>
+	            <!--1 end-->
+	            
+	            <!--2-->
+	            <div class="swiper-slide">
+	            	<p class="p2_txt ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s"><img src="img/p2_txt.png" width="100%"/></p>
+	            	<p class="p2_time"><img src="img/p2_time.png" width="100%"/></p>
+	            	<p class="p2_icon tiandun"><img src="img/p2_icon1.png" width="100%"/></p>
+	            	<p class="p2_ditu"><img src="img/p2_hai.png" width="100%"/></p>
+	            	<p class="p2_ditu_xian"><img src="img/p2_hai_xian.png" width="100%"/></p>
+	            	<p class="p2_people1"><img src="img/p2_people1.png" width="100%"/></p>
+	            	<p class="p2_people2 peo"><img src="img/p2_people2.png" width="100%"/></p>
+	            	<p class="p2_img tab"><img src="img/p2_icon2.png" width="100%"/></p>
+	            	<p class="p1_icon3"><img src="img/icon.png" width="100%"/></p>
+	            </div>
+	            <!--2 end-->
+	            
+	            <!--3-->
+	            <div class="swiper-slide">
+	            	<p class="p3_top"><img src="img/p3_lang.png"/></p>
+	            	<p class="p3_txt ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s"><img src="img/p3_txt.png" width="100%"/></p>
+	            	<p class="p3_yuansu"><img src="img/p3_bg.png"/></p>
+	            	<p class="p3_yu shake1"><img src="img/p3_icon1.png"/></p>
+	            	<p class="p3_yu2 shake2"><img src="img/p3_icon2.png"/></p>
+	            	<p class="p3_hai"><img src="img/p3_bg2.png"/></p>
+	            	<p class="p3_people peo"><img src="img/p3_people.png"/></p>
+	            	<p class="p3_number number"></p>
+	            	<p class="p1_icon3"><img src="img/icon.png" width="100%"/></p>
+	            </div>
+	            <!--3 end-->
+	            
+	            <!--4-->
+	            <div class="swiper-slide">
+	            	<p class="p4_txt ani" swiper-animate-effect="flip" swiper-animate-duration="0.8s" swiper-animate-delay="0s"><img src="img/p4_txt.png"/></p>
+	            	<p class="p4_icon1 shake1"><img src="img/p4_icon1.png"/></p>
+	            	<p class="p4_people"><img src="img/p4_people.png"/></p>
+	            	<p class="p4_icon2"><img src="img/p4_icon3.png"/></p>
+	            	<p class="p4_icon3 shake2"><img src="img/p4_icon2.png"/></p>
+	            	<p class="p4_icon4"><img src="img/p4_icon4.png"/></p>
+	            	<p class="p1_icon3"><img src="img/icon.png" width="100%"/></p>
+	            </div>
+	            <!--4 end-->
+	            
+	            <!--5-->
+	            <div class="swiper-slide">
+	            	<p class="p5_txt ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.8s" swiper-animate-delay="0s"><img src="img/p5_txt.png"/></p>
+	            	<p class="p5_people"><img src="img/p5_people.png"/></p>
+	            	<p class="p5_xiantiao"><img src="img/p5_xiantiao.png"/></p>
+	            	<p class="p5_sj yaoyiyao"><img src="img/p5_icon.png"/></p>
+	            	
+	            	<p class="p1_icon3"><img src="img/icon.png" width="100%"/></p>
+	            </div>
+	            <!--5 end-->
+	            
+	            <!--6-->
+	            <div class="swiper-slide">
+	            	<p class="p6_top"><img src="img/p6_top.png"/></p>
+	            	<div class="p6_one">
+	            		<img src="img/p6_peo1_bg.png" />
+	            		<p class="p6_one_top"><img src="img/p6_peo1_top.png"/></p>
+	            		<p class="p6_one_peo shake3"><img src="img/p6_peo1.png"/></p>
+	            		<div class="zan" id="zan1">
+	            			<p class="zan_hover"><img src="img/p6_zan_hover.png"/></p>
+	            			<img src="img/p6_zan.png"/>
+	            		</div>
+	            	</div>
+	            	<div class="p6_two">
+	            		<img src="img/p6_peo2_bg.png" />
+	            		<p class="p6_two_peo shake4"><img src="img/p6_peo2.png"/></p>
+	            		<div class="zan" id="zan2">
+	            			<p class="zan_hover"><img src="img/p6_zan_hover.png"/></p>
+	            			<img src="img/p6_zan.png"/>
+	            		</div>
+	            	</div>
+	            	<div class="p6_tishi">
+	            		<div class="p6_tishi_rq">
+	            			<ul class="news_li">
+								<li><p class="swiper_txt_p">中奖公示：<span>13896658011</span>刚刚获得<span style="color: #ffde01;">200元</span>话费！</p></li>
+								<li><p class="swiper_txt_p">中奖公示：<span>12345678912</span>刚刚获得<span style="color: #ffde01;">200元</span>话费！</p></li>
+								<li><p class="swiper_txt_p">中奖公示：<span>21987654321</span>刚刚获得<span style="color: #ffde01;">200元</span>话费！</p></li>
+							</ul>
+							<ul class="swap"></ul>
+	            		</div>
+	            	</div>
+	            	<div class="p6_three">
+	            		<img src="img/p6_peo3_bg.png" />
+	            		<p class="p6_three_peo shake5"><img src="img/p6_peo3.png"/></p>
+	            		<div class="zan" id="zan3">
+	            			<p class="zan_hover"><img src="img/p6_zan_hover.png"/></p>
+	            			<img src="img/p6_zan.png"/>
+	            		</div>
+	            	</div>
+	            	<div class="p6_four">
+	            		<img src="img/p6_peo4_bg.png" />
+	            		<p class="p6_four_peo shake6"><img src="img/p6_peo4.png"/></p>
+	            		<div class="zan" id="zan4">
+	            			<p class="zan_hover"><img src="img/p6_zan_hover.png"/></p>
+	            			<img src="img/p6_zan.png"/>
+	            		</div>
+	            	</div>
+	            	<button class="p6_but" onclick="$('.share').fadeIn();"><img src="img/p6_but.png"/></button>
+	            </div>
+	            <!--6 end-->
+	        </div>
+	   </div>
+	    <!--活动规则-->
+	    <div class="p1_rules">
+	    	<div class="rules">
+	    		<p class="rules_top"><img src="img/rules_top.png" width="100%"/></p>
+	    		<p class="rules_icon"><img src="img/popup_icon.png"/></p>
+	    		<div class="rules_txt">
+	    			<!--<img src="img/rules_txt.png" />-->
+	    			<div id="content_1" class="content">
+						<img src="img/rules_txt.png" />
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!--活动规则 end-->
+	    <!--分享-->
+	    <div class="share" onclick="$('.share').fadeOut();">
+	    	<p class="share_icon"><img src="img/share_icon.png"/></p>
+	    	<p class="share_img"><img src="img/share_img.png"/></p>
+	    </div>
+	    <!--分享 end-->
+	    <!--弹窗1-->
+	    <div class="popup popup1">
+	    	<div class="popup1_bg">
+	    		<p class="popup1_p">
+	    			你是第<span id="popup1_number" style="color: #0085d0;">0</span>个<br/>
+	    			想成为<span id="popup1_txt" style="color: #0085d0;">数据架构狮</span>的人<br />
+	    			 虽然没得奖，<br/>
+	    			骚年志向很高啊！<br />
+	    		</p>
+	    		<p class="popup1_icon"><img src="img/popup1_icon.png"/></p>
+	    		<p class="popup_icon" onclick="$('.popup1').fadeOut();"><img src="img/popup_icon.png"/></p>
+	    	</div>
+	    </div>
+	    <!--弹窗1 end-->
+	    <!--弹窗2-->
+	    <div class="popup popup2">
+	    	<div class="popup2_bg">
+	    		<img src="img/popup2.png" />
+	    		<button class="popup2_but" onclick="$('.share').fadeIn();"><img src="img/popup2_but.png"/></button>
+	    		<p class="popup_icon" onclick="$('.popup2').fadeOut();"><img src="img/popup_icon.png"/></p>
+	    	</div>
+	    </div>
+	    <!--弹窗2 end-->
+	    <!--弹窗3-->
+	    <div class="popup popup3">
+	    	<div class="popup3_bg">
+	    		<img src="img/popup3.png" />
+	    		<p class="popup3_icon" onclick="WeixinJSBridge.call('closeWindow');"><img src="img/popup3_icon.png"/></p>
+	    		<p class="popup_icon" onclick="$('.popup3').fadeOut();"><img src="img/popup_icon.png"/></p>
+	    	</div>
+	    </div>
+	    <!--弹窗3 end-->
+	    <!--中奖-->
+	    <div class="popup zhongjiang">
+	    	<div class="zj_bg1">
+	    		<img class="zj_bg1_img" src="img/zj_bg1.png"/>
+	    		<div class="zj_bg2">
+	    			<p class="zj_bg2_txt">
+	    				你是第<span style="color: #0085D0;">8</span>个想成为<br />
+	    				<span style="color: #0085D0;">数据架构狮</span>的人！<br />
+	    				恭喜你获得<span style="color: #ffe945;">100元</span>话费！
+	    			</p>
+	    			<p class="zj_sjh"><span>手机号：</span><input type="text" class="zj_inp"/></p>
+	    			<p class="zj_txt"><img src="img/zj_txt.png"/></p>
+	    		</div>
+	    		<span class="zj_icon" onclick="$('.zhongjiang').fadeOut();"><img src="img/zj_icon.png"/></span>
+	    		<button class="zj_but"><img src="img/zj_but.png"/></button>
+	    	</div>
+	    </div>
+	    <!--中奖 end-->
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js" ></script>
+	<script type="text/javascript" src="js/swiper.animate.min.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js" ></script>
+	<script>
+		//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+		//音乐播放暂停v 
+	    var audio = document.getElementById('audio');
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+		//页面滑动
+	    var swiper = new Swiper('.swiper-container', {
+	        direction: 'vertical',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        mousewheelControl: true
+	    });
+    </script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/minified/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+    <script>
+		(function($){
+			$(window).load(function(){
+				$("#content_1").mCustomScrollbar({
+					set_width:false, /*optional element width: boolean, pixels, percentage*/
+					set_height:false, /*optional element height: boolean, pixels, percentage*/
+					horizontalScroll:false, /*scroll horizontally: boolean*/
+					scrollInertia:950, /*scrolling inertia: integer (milliseconds)*/
+					mouseWheel:true, /*mousewheel support: boolean*/
+					mouseWheelPixels:"auto", /*mousewheel pixels amount: integer, "auto"*/
+					autoDraggerLength:true, /*auto-adjust scrollbar dragger length: boolean*/
+					autoHideScrollbar:false, /*auto-hide scrollbar when idle*/
+					scrollButtons:{ /*scroll buttons*/
+						enable:false, /*scroll buttons support: boolean*/
+						scrollType:"continuous", /*scroll buttons scrolling type: "continuous", "pixels"*/
+						scrollSpeed:"auto", /*scroll buttons continuous scrolling speed: integer, "auto"*/
+						scrollAmount:40 /*scroll buttons pixels scroll amount: integer (pixels)*/
+					},
+					advanced:{
+						updateOnBrowserResize:true, /*update scrollbars on browser resize (for layouts based on percentages): boolean*/
+						updateOnContentResize:false, /*auto-update scrollbars on content resize (for dynamic content): boolean*/
+						autoExpandHorizontalScroll:false, /*auto-expand width for horizontal scrolling: boolean*/
+						autoScrollOnFocus:true, /*auto-scroll on focused elements: boolean*/
+						normalizeMouseWheelDelta:false /*normalize mouse-wheel delta (-1/1)*/
+					},
+					contentTouchScroll:true, /*scrolling by touch-swipe content: boolean*/
+					callbacks:{
+						onScrollStart:function(){}, /*user custom callback function on scroll start event*/
+						onScroll:function(){}, /*user custom callback function on scroll event*/
+						onTotalScroll:function(){}, /*user custom callback function on scroll end reached event*/
+						onTotalScrollBack:function(){}, /*user custom callback function on scroll begin reached event*/
+						onTotalScrollOffset:0, /*scroll end reached offset: integer (pixels)*/
+						onTotalScrollBackOffset:0, /*scroll begin reached offset: integer (pixels)*/
+						whileScrolling:function(){} /*user custom callback function on scrolling event*/
+					},
+					theme:"light" /*"light", "dark", "light-2", "dark-2", "light-thick", "dark-thick", "light-thin", "dark-thin"*/
+				});
+			});
+		})(jQuery);
+	</script>
+</html>

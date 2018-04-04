@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+		<title>爱随星动，为爱摘星</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<audio id="audio_zt" src="bg.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>
+		<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+		<!--p1-->
+		<div class="p1_div ym_div">
+			<div class="snow-container"></div>
+			<button class="p1_but3"><img src="img/p1_but3.png"/></button>
+			<div class="p1_top">
+				<img src="img/p1_txt1.png" />
+				<p class="p1_top_icon"><img src="img/p1_guang1.png"/></p>
+			</div>
+			<p class="p1_txt"><img src="img/p1_txt2.png"/></p>
+			<button class="p1_but p1_but1"><img src="img/p1_but1.png"/></button>
+			<button class="p1_but p1_but2"><img src="img/p1_but2.png"/></button>
+			<div class="p1_sjq">
+				<p class="p1_img_guang"><img src="img/p1_guang2.png"/></p>
+				<div class="p1_img">
+					<img src="img/p1_icon6.png" />
+					<p class="p1_img_img1"><img src="img/p1_icon3.png"/></p>
+					<p class="p1_img_img2">
+						<img src="img/p1_icon1.png"/>
+						<span class="p1_img_icon1_guang"><img src="img/p1_guang3.png"/></span>
+					</p>
+					<p class="p1_img_img3"><img src="img/p1_icon5.png"/></p>
+					<p class="p1_img_img4"><img src="img/p1_icon2.png"/></p>
+					<p class="p1_img_img5"><img src="img/p1_icon4.png"/></p>
+				</div>
+			</div>
+		</div>
+		<!--p1  end-->
+		<!--p2-->
+		<div class="p2_div ym_div">
+			<p class="p2_img1"><img src="img/p2_icon1.png"/></p>
+			<div class="p2_star_bg">
+				<img src="img/p2_xt.png" />
+				<ul class="star_icon">
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+					<li class=""><img src="img/p2_x1.png"/></li>
+					<li class=""><img src="img/p2_x2.png"/></li>
+				</ul>
+			</div>
+			<div class="p2_img">
+				<img src="img/p2_icon2.png" />
+				<p class="p2_img_number">+<span id="Number">0</span></p>
+			</div>
+			<!--倒计时-->
+			<div class="p2_djs p_bg">
+				<div class="p2_djs_txt">
+					<img src="img/p2_djs_txt.png" />
+				</div>
+			</div>
+		</div>
+		<!--p2  end-->
+		<!--活动规则-->
+		<div class="r_div p_bg">
+			<p><img src="img/p1_guize.png"/></p>
+		</div>
+		<!--成功-->
+		<div class="succes p_bg">
+			<div class="succes_div">
+				<img src="img/p2_sc_img.png" />
+				<button class="tc_but succes_but"><img src="img/p1_lq_but3.png"/></button>
+			</div>
+		</div>
+		<!--失败-->
+		<div class="fail p_bg">
+			<div class="succes_div">
+				<img src="img/p2_fi_img.png" />
+				<button class="tc_but fail_but" onclick="location.reload();"><img src="img/p1_lq_but5.png"/></button>
+			</div>
+		</div>
+		<!--我的奖品-->
+		<div class="p_bg my_jp">
+			<div class="my_jp_wlq my_jp_div1">
+				<!--吊坠-->
+				<div class="wlq_jp1 hide">
+					<img src="img/p1_lq_bg.png" />
+					<p class="my_jp_wlq_top"><img src="img/p1_lq_jp1.png"/></p>
+					<p class="my_jp_wlq_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="my_jp_wlq_txt"><img src="img/p1_lq_jp1_txt.png"/></p>
+					<!--未领取-->
+					<div class="my_jp_db1 ">
+						<p class="my_jp_wlq_txt2">吊坠一颗！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<!--领取-->
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">吊坠一颗！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--银镯-->
+				<div class="wlq_jp2 hide">
+					<img src="img/p1_lq_img.png" />
+					<p class="wlq_jp_img1"><img src="img/p1_lq_jp2.png"/></p>
+					<p class="wlq_jp_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt2"><img src="img/p1_lq_jp2_txt.png"/></p>
+					<div class="my_jp_db1 ">
+						<p class="wlq_jp_txt3">一个！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">一个！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--12生肖手镯-->
+				<div class="wlq_jp3 hide">
+					<img src="img/p1_lq_img.png" />
+					<p class="wlq_jp_img1"><img src="img/p1_lq_jp3.png"style="width: 72% !important;"/></p>
+					<p class="wlq_jp_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt2"><img src="img/p1_lq_jp3_txt.png"style="width: 75% !important;"/></p>
+					<div class="my_jp_db1 ">
+						<p class="wlq_jp_txt3">一个！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">一个！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--巴布熊-->
+				<div class="wlq_jp4 hide">
+					<img src="img/p1_lq_img.png" />
+					<p class="wlq_jp_img1"><img src="img/p1_lq_jp4.png"/></p>
+					<p class="wlq_jp_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt2"><img src="img/p1_lq_jp4_txt.png"style="width: 80% !important;"/></p>
+					<div class="my_jp_db1 ">
+						<p class="wlq_jp_txt3">一个！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">一个！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--5元-->
+				<div class="wlq_jp5 hide">
+					<img src="img/p1_lq_img.png" />
+					<p class="wlq_jp_img2"><img src="img/p1_lq_jp_wy.png"/></p>
+					<p class="wlq_jp_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt2"><img src="img/p1_lq_jp_wy_txt.png"/></p>
+					<div class="my_jp_db1 ">
+						<p class="wlq_jp_txt3">一张！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">一张！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--10元-->
+				<div class="wlq_jp6 hide">
+					<img src="img/p1_lq_img.png" />
+					<p class="wlq_jp_img3"><img src="img/p1_lq_jp_sy.png"/></p>
+					<p class="wlq_jp_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt2"><img src="img/p1_lq_jp_sy_txt.png"/></p>
+					<div class="my_jp_db1 ">
+						<p class="wlq_jp_txt3">一张！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">一张！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--20元-->
+				<div class="wlq_jp7 hide">
+					<img src="img/p1_lq_img.png" />
+					<p class="wlq_jp_img3"><img src="img/p1_lq_jp_ey.png"/></p>
+					<p class="wlq_jp_txt1"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt2"><img src="img/p1_lq_jp_ey_txt.png"/></p>
+					<div class="my_jp_db1 ">
+						<p class="wlq_jp_txt3">一张！<br />快去领取吧！</p>
+						<button class="my_jp_but my_jp_wlq_but"><img src="img/p1_lq_but.png"/></button>
+					</div>
+					<div class="my_jp_db2 hide">
+						<p class="wlq_jp_txt4">一张！</p>
+						<p class="wlq_jp_txt5"><img src="img/p1_lq_txt2.png"/></p>
+						<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+					</div>
+				</div>
+				<!--未中奖-->
+				<div class="wlq_jp8 ">
+					<img src="img/p1_lq_bg3.png" />
+					<button class="my_jp_but my_jp_ylq_but"><img src="img/p1_lq_but2.png"/></button>
+				</div>
+				
+			</div>
+		</div>
+		<!--抽奖-->
+		<div class="p_bg my_cj">
+			<!--非会员-->
+			<div class="my_jp_fhy my_jp_div2">
+				<img src="img/p1_lq_bg4.png" />
+				<button class="my_jp_but my_jp_fhy_but" onclick="window.location.href='https://hope.demogic.com/gicfwh/member_index;jsessionid=7C5253B115B91D20CAA02A3C5C77DA3E
+'"><img src="img/p1_lq_but4.png"/></button>
+			</div>
+			<!--中奖-->
+			<div class="my_jp_zj my_jp_div1">
+				<!--吊坠-->
+				<div class="zj_jp1 hide">
+					<img src="img/p1_lq_bg.png" />
+					<p class="my_jp_wlq_top"><img src="img/p1_lq_jp1.png"/></p>
+					<p class="wlq_jp_txt6"><img src="img/p1_lq_txt3.png"/></p>
+					<p class="my_jp_wlq_txt3">吊坠一颗！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+				<!--银镯-->
+				<div class="zj_jp2 hide">
+					<img src="img/p1_lq_img2.png" />
+					<p class="wlq_jp_img1"><img src="img/p1_lq_jp2.png"/></p>
+					<p class="wlq_jp_txt7"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt8"><img src="img/p1_lq_jp2_txt.png"/></p>
+					<p class="wlq_jp_txt9">一个！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+				<!--12生肖手镯-->
+				<div class="zj_jp3 hide">
+					<img src="img/p1_lq_img2.png" />
+					<p class="wlq_jp_img1"><img src="img/p1_lq_jp3.png"style="width: 72% !important;"/></p>
+					<p class="wlq_jp_txt7"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt8"><img src="img/p1_lq_jp3_txt.png" style="width: 75% !important;"/></p>
+					<p class="wlq_jp_txt9">一个！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+				<!--巴布熊-->
+				<div class="zj_jp4 hide">
+					<img src="img/p1_lq_img2.png" />
+					<p class="wlq_jp_img1"><img src="img/p1_lq_jp4.png"/></p>
+					<p class="wlq_jp_txt7"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt8"><img src="img/p1_lq_jp4_txt.png" style="width: 80% !important;"/></p>
+					<p class="wlq_jp_txt9">一个！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+				<!--5元-->
+				<div class="zj_jp5 hide">
+					<img src="img/p1_lq_img2.png" />
+					<p class="wlq_jp_img2" style="top: 41%;"><img src="img/p1_lq_jp_wy.png"/></p>
+					<p class="wlq_jp_txt7"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt8"><img src="img/p1_lq_jp_wy_txt.png"/></p>
+					<p class="wlq_jp_txt9">一张！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+				<!--10元-->
+				<div class="zj_jp6 hide">
+					<img src="img/p1_lq_img2.png" />
+					<p class="wlq_jp_img3"><img src="img/p1_lq_jp_sy.png"/></p>
+					<p class="wlq_jp_txt7"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt8"><img src="img/p1_lq_jp_sy_txt.png"/></p>
+					<p class="wlq_jp_txt9">一张！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+				<!--20元-->
+				<div class="zj_jp7 ">
+					<img src="img/p1_lq_img2.png" />
+					<p class="wlq_jp_img3"><img src="img/p1_lq_jp_ey.png"/></p>
+					<p class="wlq_jp_txt7"><img src="img/p1_lq_txt.png"/></p>
+					<p class="wlq_jp_txt8"><img src="img/p1_lq_jp_ey_txt.png"/></p>
+					<p class="wlq_jp_txt9">一张！</p>
+					<button class="my_jp_but my_jp_zj_but1 "><img src="img/p1_lq_but.png"/></button>
+					<button class="my_jp_but my_jp_zj_but2 hide"><img src="img/p2_but4.png"/></button>
+				</div>
+			</div>
+		</div>
+		<!--分享-->
+		<div class="p_bg share hide">
+			<p class="share_icon"><img src="img/share_icon1.png"/></p>
+			<p class="share_txt"><img src="img/share_txt1.png"/></p>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/snow.js" ></script>
+	<script type="text/javascript" src="js/jquery_002.js" ></script>
+	<script>
+		//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio_zt').play();
+	    }, false);
+		//音乐播放暂停v 
+	    var audio = document.getElementById('audio_zt');
+	    //audio.volume = 0.1;
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+	</script>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<audio id="audio" src="music/music.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>
+		<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+		<!--p1-->
+		<div class="p1_div ">
+			<div class="p1_div_top"><img src="img/p1_txt.png"/></div>
+			<div class="p1_div_img">
+				<img src="img/p1_img1.png"/>
+				<button class="p1_div_but" onclick="$('.guize').removeClass('hide');$('.p1_hand').addClass('hide');"><img src="img/p1_but.png"/></button>
+				<span class="p1_hand"><img src="img/p1_hand.png"/></span>
+			</div>
+			<div class="p1_div_peo">
+				<img class="p1_div_peo_img animated" src="img/p1_peo.png"/>
+				<span class="p1_div_dhk"><img src="img/p1_dhk.png"/></span>
+			</div>
+			<button class="p1_but">
+					<img class="p1_but_hover" src="img/p1_but2_hover.png"/>
+				<span class="p1_but_img">
+					<img src="img/p1_but2.png"/>
+				</span>
+			</button>
+			<!--规则-->
+			<div class="guize hide">
+				<img class="guize_img" src="img/p1_gz.png" onclick="$('.guize').addClass('hide')"/>
+			</div>
+		</div>
+		<!--p1 end-->
+		<!--p2-->
+		<div class="p2_div hide">
+			<div class="p2_img">
+				<img src="img/p2_img1.png"/>
+				<!--食材-->
+				<ul class="p2_food">
+					<li data-id="1" class="p2_food_li_dh1" data-value="果冻"><img src="img/dsc1.png"/></li>
+					<li data-id="2" class="p2_food_li_dh2" data-value="薏米"><img src="img/dsc2.png"/></li>
+					<li data-id="3" class="p2_food_li_dh3" data-value="奶盖"><img src="img/dsc3.png"/></li>
+					<li data-id="4" class="p2_food_li_dh4" data-value="芝士"><img src="img/dsc4.png"/></li>
+					<li data-id="5" class="p2_food_li_dh5" data-value="珍珠粉"><img src="img/dsc5.png"/></li>
+					<li data-id="6" class="p2_food_li_dh6" data-value="绿豆"><img src="img/dsc6.png"/></li>
+					<li data-id="7" class="p2_food_li_dh7" data-value="红枣"><img src="img/dsc7.png"/></li>
+					<li data-id="8" class="p2_food_li_dh8" data-value="人参"><img src="img/dsc8.png"/></li>
+					<li data-id="9" class="p2_food_li_dh9" data-value="芥末"><img src="img/dsc9.png"/></li>
+					<li data-id="10" class="p2_food_li_dh10" data-value="金箔"><img src="img/dsc10.png"/></li>
+					<li data-id="11" class="p2_food_li_dh11" data-value="枸杞"><img src="img/dsc11.png"/></li>
+					<li data-id="12" class="p2_food_li_dh12" data-value="槟榔"><img src="img/dsc12.png"/></li>
+					<li data-id="13" class="p2_food_li_dh13" data-value="板蓝根"><img src="img/dsc13.png"/></li>
+					<li data-id="14" class="p2_food_li_dh14" data-value="核桃"><img src="img/dsc14.png"/></li>
+					<li data-id="15" class="p2_food_li_dh15" data-value="咖喱"><img src="img/dsc15.png"/></li>
+				</ul>
+				<!--食材   end-->
+				<span class="p2_img1"><img src="img/p2_img3.png"/></span>
+				<span class="p2_img2"><img src="img/p2_img4.png"/></span>
+				<span class="p2_img3"><img src="img/p2_img5.png"/></span>
+				<span class="p2_img4"><img src="img/p2_img2.png"/></span>
+				<span class="p2_img5"><img src="img/p2_img7.png"/></span>
+			</div>
+			<!--已选-->
+			<div class="p2_selected hide">
+				<span class="p2_selected_top"><img src="img/p2_img8.png"/></span>
+				<ul class="p2_selected_ul"></ul>
+			</div>
+			<!--已选  end-->
+			<div class="p2_but">
+				<img class="p2_but_hover" src="img/p2_but_hover.png" />
+				<button><img src="img/p2_but.png"/></button>
+			</div>
+			<!--已选 太多-->
+			<div class="p2_po p2_more hide" onclick="$('.p2_more').addClass('hide')"><img src="img/p3_duole.png"/></div>
+			<!--已选 太少-->
+			<div class="p2_po p2_sl hide" onclick="$('.p2_sl').addClass('hide')"><img src="img/p3_shaole.png"/></div>
+		</div>
+		<!--p2 end-->
+		<!--p3-->
+		<div class="p3_div hide">
+			<div class="p3_top">
+				<img src="img/p3_txt2.png"/>
+			</div>
+			<!--星值-->
+			<ul class="p3_z">
+				<!--星值1-->
+				<li class="xz xz1 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz1.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz2.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+				</li>
+				<!--星值2-->
+				<li class="xz xz2 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz2.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz2.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+				</li>
+				<!--星值3-->
+				<li class="xz xz3 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz2.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+				</li>
+				<!--星值4-->
+				<li class="xz xz4 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz2.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+				</li>
+				<!--星值5-->
+				<li class="xz xz5 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz2.png"/></span>
+					</div>
+				</li>
+				<!--星值6-->
+				<li class="xz xz6 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+				</li>
+				<!--星值7-->
+				<li class="xz xz7 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz5.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+				</li>
+				<!--星值8-->
+				<li class="xz xz8 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz3.png"/></span>
+					</div>
+				</li>
+				<!--星值9-->
+				<li class="xz xz9 hide">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz4.png"/></span>
+					</div>
+				</li>
+				<!--星值10-->
+				<li class="xz xz10 ">
+					<div class="xz_mwz">
+						<img src="img/p3_mwz.png"/><span class="xz_xz4"><img src="img/p3_xz5.png"/></span>
+					</div>
+					<div class="xz_yyz">
+						<img src="img/p3_yyz.png"/><span class="xz_xz4"><img src="img/p3_xz5.png"/></span>
+					</div>
+					<div class="xz_cyz">
+						<img src="img/p3_cyz.png"/><span class="xz_xz4"><img src="img/p3_xz5.png"/></span>
+					</div>
+				</li>
+			</ul>
+			<!--星值end-->
+			<!--标签 + 评语-->
+			<div class="p3_py">
+				<img src="img/p3_txt_bg.png"/>
+				<span class="p3_top_txt">实验结果</span>
+				<!--标签 -->
+				<div class="p3_py_bq">
+					<span>人间极品</span>
+					<span>脑洞超大</span>
+					<span>辣眼睛</span>
+					<span>装逼无形</span>
+					<span>五级手残</span>
+				</div>
+				<!--标签  end-->
+				<!--评语 -->
+				<div class="p3_py_py">
+					<img src="img/p3_txt_bg3.png" />
+					<div class="p3_py_py_p">
+						<p class="xz1 hide">你不是美食家，你大概是个化学家，你做的这杯豆浆不要轻易给别人喝哦~</p>
+						<p class="xz2 hide">手残党不要怕！你要相信早晚有人会做豆浆给你喝~你就负责貌美如花!</p>
+						<p class="xz3 hide">难喝不可怕，可怕的是味蕾轰炸！人生可以轰轰烈烈，但做豆浆还是不要了啦~</p>
+						<p class="xz4 hide">令人窒息的操作，君子远庖厨，这句话对你特别适用</p>
+						<p class="xz5 hide">是我配方不够妙了，还是你胖虎口味叼了</p>
+						<p class="xz6 hide">美味诚可贵，营养价更高，我的豆料包两者皆够料！笔芯</p>
+						<p class="xz7 ">你是一个特别注重内在的人，正如你的豆料包营养到流鼻血，好喝不要贪杯哦~</p>
+						<p class="xz8 hide">你是现实中的颜值担当，你的豆浆也是饮料届的美味担当，那你很棒棒哦~</p>
+						<p class="xz9 hide">细腻的口感却在舌尖产生了爆炸式的快感…..(此处省略1万字）</p>
+						<p class="xz10 hide">此处应该有中华小当家BGM，你就是当代的豆浆西施啊</p>
+					</div>
+				</div>
+				<!--评语  end-->
+				<div class="p3_but">
+					<button class="p3_but_right" onclick="window.location.href='http://w.yre0.com/h.uAm4XR'"><img src="img/p3_but2.png"/></button>
+					<button class="p3_but_left" onclick="$('.p3_share').fadeIn();"><img src="img/p3_but1.png"/></button>
+				</div>
+				<p class="p3_txt_txt"><img src="img/p3_txt_txt.png"/></p>
+			</div>
+			<!--标签 + 评语  end-->
+			<div class="p3_share" onclick="$('.p3_share').fadeOut();">
+				<span><img src="img/share_icon.png"/></span>
+			</div>
+		</div>
+		<!--p3 end-->
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script>
+		//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+		//音乐播放暂停v 
+	    var audio = document.getElementById('audio');
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+		//点击选择
+		$(function(){
+			$(".p1_but").click(function(){
+				$(".p1_div").addClass("hide");
+				$(".p2_div").removeClass("hide");
+			})
+			//生成报告按钮
+			$(".p2_but").click(function(){  
+				var arr = [];  //数组
+				var liId = $(".p2_selected_ul").find("li");   
+			   	for(var i = 0 ; i < liId.length; i++){		//转换成数组
+					arr.push(liId.eq(i).attr("data-id"));		//已选食材的data-id
+				}
+				console.log(arr);
+				
+				var liLength = $(".p2_selected_ul li").length;  //获取li的长度
+				var classSz = [".xz1",".xz2",".xz3",".xz4",".xz5",".xz6",".xz7",".xz8",".xz9",".xz10"];
+				var sjs = classSz[Math.floor(Math.random()* classSz.length)];
+				if(liLength == 5){
+					$(".p3_div").removeClass("hide");
+					$(".p2_div").addClass("hide");
+					$(sjs).removeClass("hide");//随机显示
+				}else{
+					$(".p2_sl").removeClass("hide");
+				}
+			})
+			//食材选择，添加，删除
+			$(".p2_food li").click(function(){
+				$(".p2_selected").removeClass("hide");
+				$(".p2_img4").addClass("hide");
+				var liLength = $(".p2_selected_ul li").length;
+				var thisImg = $(this).find("img").attr("src");
+				var dataId = $(this).attr("data-id");  //流水线上的食材的data-id
+				var dataValue = $(this).attr("data-value");  //流水线上的食材的data-id
+				var ulHtml = "<li data-id = "+dataId+">"+
+							"<span>"+"<img src="+thisImg+"/>"+"</span>"+
+							"<p>"+dataValue+"</p>"+
+							"<font><img src='img/p3_icon.png'/></font>"+
+							"</li>";
+				if(liLength == 5){
+					$(".p2_more").removeClass("hide");
+				}else{
+					$(".p2_selected_ul").append(ulHtml);
+					$(".p2_selected_ul li").on("click",function(){ //点击已选食材删除
+						$(this).remove();
+					})
+				}
+			});
+			
+		})
+	</script>
+</html>

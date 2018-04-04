@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection">
+    <title>三生三世</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/puzzle.css">
+    <link rel="stylesheet" href="css/rem.css">
+</head>
+	<style>
+	   #gameBox>li{
+	       touch-action: none;
+	       -ms-touch-action: none;
+	   }
+	   	.music_img1{width: 60px;height: 60px;position: fixed;top: 20px;right: 20px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background: url(img/music.jpg) no-repeat;animation: myMusic 2s linear infinite;-webkit-animation: myMusic 2s linear infinite;background-size: 100%;}
+		.music_img2{width: 60px;height: 60px;position: fixed;top: 20px;right: 20px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background:url(img/music2.jpg) no-repeat;background-size: 100%;}	
+		@keyframes myMusic{
+			0%{
+				transform: rotate(0deg);
+				-webkit-transform: rotate(0deg);
+			}
+			100%
+			{
+				transform: rotate(360deg);
+				-webkit-transform: rotate(360deg);
+			}
+		}
+		@-webkit-keyframes myMusic{
+			0%{
+				transform: rotate(0deg);
+				-webkit-transform: rotate(0deg);
+			}
+			100%
+			{
+				transform: rotate(360deg);
+				-webkit-transform: rotate(360deg);
+			}
+		}	
+	</style>
+<body>
+	<audio id="audio" src="audio/muisc.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>
+	<div id="music" class="music music_img1" onclick="playOrPaused();"></div>
+    <div class="puz_bg">
+    	<div class="d_puz_logo"><img src="img/d_logo.png" width="100%"/></div>
+    	<div class="page1">
+            <div class="CountDown">你还有<span id="CountDown_num">3</span>秒钟记住原图哦</div>
+        	<div class="d_puz_but1">
+        		<button class="d_puz_but1_but">第<strong id="level">?</strong>关</button>
+        	</div>
+	        <div class="game-box">
+	        	
+	        	<div class="puz_yt">
+	        		<img src="" width="100%"/>
+	        	</div>
+	        	
+	            <div class="game-pop-box ui-center play" id="layer">
+	                <div class="game-warp">
+	                    <div class="game-pop-hd">
+	                        <h2>挑战失败！</h2>
+	                        <p>再接再厉！</p>
+	                    </div>
+	                    <a href="javascript:;" class="game-start-btn play-btn" id="start">开始</a>
+	                </div>
+	            </div>
+	            <ul id="gameBox">
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	                <li><img src="" alt=""></li>
+	            </ul>
+	        </div>
+	        <button id="reset" class="game-reset-btn" disabled><img src="img/d_but1.png" width="100%"/></button>
+	        <button class="d_puz_but2" ><img src="img/p2_02.png"/></button>
+	    </div>
+    </div>
+    <!--活动规则-->
+	<div class="d_rule_back" >
+		<div class="d_close"><img src="img/close.png" width="100%"/></div>
+		<div class="d_rule_box"><img src="img/p1_06.png" width="100%"/></div>
+	</div>
+    <canvas id="canvas" style="display: none" width="158" height="158"></canvas>
+    
+    <span class="play-time" id="timing" style="display: none;">?</span>
+    <p class="pages" style="display: none;"> 第&nbsp;<strong id="level">?</strong>&nbsp;/&nbsp;<span id="levels">?</span> 关， 本关限时<span id="time">?</span>秒</p>
+   
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+    	//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+	    //音乐播放暂停
+		var audio = document.getElementById('audio');
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+		//按钮事件
+    	$(function(){
+    		//活动规则按钮点击事件
+    		$(".d_puz_but2").on("tap",function(){
+    			$(".d_rule_back").css("display","block")
+    		})
+    		//关闭活动规则按钮点击事件
+    		$(".d_close").on("tap",function(){
+    			$(".d_rule_back").css("display","none")
+    		})
+    	})
+    </script>
+</body>
+</html>

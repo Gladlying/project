@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+		<title>三生三世</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			.music_img1{width: 60px;height: 60px;position: fixed;top: 20px;right: 20px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background: url(img/music.jpg) no-repeat;animation: myMusic 2s linear infinite;-webkit-animation: myMusic 2s linear infinite;background-size: 100%;}
+			.music_img2{width: 60px;height: 60px;position: fixed;top: 20px;right: 20px;z-index: 9999;background: #FFFFFF;border-radius: 50%;background:url(img/music2.jpg) no-repeat;background-size: 100%;}	
+			@keyframes myMusic{
+				0%{
+					transform: rotate(0deg); 
+					-webkit-transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			@-webkit-keyframes myMusic{
+				0%{
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+				}
+			}	
+		</style>
+	</head>
+	<body>
+		<!--<audio id="audio" src="audio/muisc.mp3" style="display:none ;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>-->
+		<div id="music" class="music music_img1" onclick="playOrPaused();"></div>
+		<!--loding-->
+		<div class="index">
+			<div class="x_index_bg">
+				<div class="x_index_but x_index_but1"><button id="loding"><img src="img/ind_1.png" width="100%"/></button></div>
+			</div>	
+		</div>
+		<!--开始游戏-->
+		<div class="index1" style="display: block;">
+			<div class="x_index_bg">
+				<div class="x_index_but x_index_but1"><button onclick="window.location.href='puzzle.html'"><img src="img/p1_02.png" width="100%"/></button></div>
+				<div class="x_prize_but x_prize_but1">
+					<button onclick="$('.x_prize_back').css('display','block')"><img src="img/p1_03.png" width="100%"/></button>
+				</div>
+				<div class="x_rule_but x_rule_but1">
+					<button onclick="$('.x_rule_back').css('display','block')"><img src="img/p1_04.png" width="100%"/></button>
+				</div>
+			</div>
+	
+			<!--我的奖品-->
+			<div class="x_prize_back" style="display: ;">
+				<div class="x_prize_close" ><img onclick="$('.x_prize_back').css('display','none')" src="img/close.png" width="100%"/></div>
+				<!--奖品1   抵用券-->
+				<div class="x_prize_box" style="display: none;">
+					<img src="img/p1_jp1.png" width="100%"/>
+				</div>
+				<!--奖品2  明信片-->
+				<div class="x_prize_box" style="display: none;">
+					<img src="img/p1_jp2.png" width="100%"/>
+				</div>
+				<!--奖品3  桃花系列手串-->
+				<div class="x_prize_box" style="display: none;">
+					<img src="img/p1_jp3.png" width="100%"/>
+				</div>
+				<!--奖品4  转运桃花符-->
+				<div class="x_prize_box" style="display: none;">
+					<img src="img/p1_jp4.png" width="100%"/>
+				</div>
+				<!--奖品5 彩宝项链-->
+				<div class="x_prize_box" style="display: none;">
+					<img src="img/p1_jp5.png" width="100%"/>
+				</div>
+				<!--未中奖-->
+				<div class="x_prize_box" style="display: none;">
+					<img src="img/p1_09.png" width="100%" class="x_prize_box_img"/>
+				</div>
+				<!--中奖两次-->
+				<div class="x_prize_box" style="overflow: hidden;display: none;">
+					<img src="img/p1_07.png" width="100%" class="x_prize_box_img"/>
+					<div class="x_prize_box_zjd">
+						<p>您以获得明牌好礼</p>
+						<span>礼品1</span>
+						<span>礼品2</span>
+						<p>拼出桃花运</p>
+						<p>2017走好运</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!--活动规则-->
+			<div class="x_rule_back" >
+				<div class="x_close" ><img onclick="$('.x_rule_back').css('display','none')" src="img/close.png" width="100%"/></div>
+				<div class="x_rule_box"><img src="img/p1_06.png" width="100%"/></div>
+			</div>	
+		</div>
+		
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/snowfall.jquery.js"></script>
+	<script> 
+	    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+	    //音乐播放暂停
+		var audio = document.getElementById('audio');
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+	    //背景
+	    $(document).ready(function(){
+			$(document).snowfall('clear');
+			$(document).snowfall({
+				image: "img/p1_05.png",
+				flakeCount:5,
+				minSize: 43,
+				maxSize: 66
+			});
+		})
+	    //loding页面跳转
+	    $(function(){
+	    	$("#loding").click(function(){
+	    		$(".index").hide();
+	    		$(".index1").show();
+	    	})
+	    })
+	    
+	</script> 
+</html>

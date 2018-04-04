@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--<audio id="audio" src="shiyan.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>-->
+		<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+		<div class="p1_div" style="display: ;">
+			<p class="p1_logo"><img src="img/logo.png"/></p>
+			<div class="p1_donghua">
+				<p class="p1_lh2_hz"><span class="p1_lh2"><img src="img/p1_lh2.png"/></span></p>
+				<div class="p1_lh_icon">
+					<span class="p1_lh_icon_1 p1_lh_icon1"><img src="img/p1_lh_icon1.png"/></span>
+					<span class="p1_lh_icon_2 p1_lh_icon2"><img src="img/p1_lh_icon2.png"/></span>
+					<span class="p1_lh_icon_1 p1_lh_icon3"><img src="img/p1_lh_icon1.png"/></span>
+					<span class="p1_lh_icon_2 p1_lh_icon4"><img src="img/p1_lh_icon2.png"/></span>
+					<span class="p1_lh_icon_1 p1_lh_icon5"><img src="img/p1_lh_icon1.png"/></span>
+					<span class="p1_lh_icon_2 p1_lh_icon6"><img src="img/p1_lh_icon2.png"/></span>
+					<span class="p1_lh_icon_1 p1_lh_icon7"><img src="img/p1_lh_icon1.png"/></span>
+					<span class="p1_lh_icon_2 p1_lh_icon8"><img src="img/p1_lh_icon2.png"/></span>
+				</div>
+			</div>
+			<p class="p1_txt">
+				<img src="img/p1_txt.png" />
+				<button class="p1_but"></button>
+			</p>
+		</div>
+		
+		<div class="p2_div" style="display:none ;">
+			<div class="p2_txt">
+				<p class="p2_img"><img src="img/p2_icon.png"/></p>
+				<p class="p2_txt1"><img src="img/p2_xm.png"/></p>
+				<p class="p2_txt2">
+					<span><img src="img/p2_txt1.png"/></span>
+					<input type="text" class="p2_txt2_inp name"/>
+				</p>
+				<p class="p2_txt3">
+					<span><img src="img/p2_txt2.png"/></span>
+					<input type="text" class="p2_txt2_inp duixiang"/>
+				</p>
+			</div>
+			<p>
+				<button class="p2_but p2_but1" data-id="1">
+					<span><img src="img/p2_but1_txt.png"/></span>					
+				</button>
+				<button class="p2_but p2_but2" style="margin-left: 30px;" data-id="2">
+					<span><img src="img/p2_but2_txt.png"/></span>					
+				</button>
+			</p>
+		</div>
+		
+		<div class="p3_div" style="display: none;">
+			
+			<div class="p3_div_donghua">
+				<img src="img/p3_bg.png" />
+				<div class="p3_hz1">
+					<p><img src="img/p3_icon_hz1.png"/></p>
+				</div>
+				<p class="p3_jz"></p>
+				<div class="p3_hz3">
+					<p class="p3_hz3_icon p3_hz3_icon_1"></p>
+				</div>
+				<div class="p3_hz2">
+					<p><img src="img/p3_icon_hz3.png"/></p>
+				</div>
+				<p class="p3_sy"><img src="img/p3_sy.png"/></p>
+				<p class="p3_img"><img src="img/p3_icon7.png"/></p>
+			</div>
+			<div class="p3_car">
+				<img src="img/p3_car.png"/>
+				<p class="p3_car_icon">
+					<span><img src="img/p3_car_icon2.png"/></span>
+					<span><img src="img/p3_car_icon4.png"/></span>
+					<span><img src="img/p3_car_icon1.png"/></span>
+					<span><img src="img/p3_car_icon3.png"/></span>
+				</p>
+			</div>
+			<p class="p3_txt"><img src="img/p3_but.png"/></p>
+			<span class="p3_txt_gif"><img src="img/p3_txt.gif" /></span>
+		</div>
+		
+		<div class="p4_div" style="display:none;">
+			<div class="p4_txt">
+				<div class="p4_txt_wenben">
+					亲爱的<span class="so_people">哦哦哦</span>：
+					<textarea id="shiyan" class="p4_text">想有天，
+挽着你的手， 
+去敬各位来宾的酒。
+					</textarea>
+					<p class="p4_dianj">点击可自由编辑</p>
+					<p class="p4_myname sp_people">aaa</p>
+					<p class="p4_data"></p>
+					<span class="p4_logo"><img src="img/p4_icon1.png"/></span>
+					<span class="p4_img"><img src="img/p4_icon.png"/></span>
+				</div>
+			</div>
+			<p class="p4_but">
+				<button onclick="location.reload();"><img src="img/p4_but1.png"/></button>
+				<button onclick="$('.share').fadeIn();"><img src="img/p4_but2.png"/></button>
+			</p>
+		</div>
+		<!--接收者打开页面-->
+		<div class="p5_div" style="display: none;">
+			<p class="p5_img1 bounce">
+				<img src="img/p6_icon1.png" />
+			</p>
+			<p class="p5_img2">
+				<img src="img/p6_icon2.png" />
+			</p>
+			<div class="p5_wenben" style="display: none;z-index: 2;position: relative;">
+				<div class="p4_txt">
+					<div class="p4_txt_wenben">
+						亲爱的<span class="so_people">哦哦哦</span>：
+						<textarea id="shiyan" class="p4_text">哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦</textarea>
+						<p class="p4_myname sp_people">aaa</p>
+						<p class="p4_data"></p>
+						<span class="p4_logo"><img src="img/p4_icon1.png"/></span>
+						<span class="p4_img"><img src="img/p4_icon.png"/></span>
+					</div>
+				</div>
+				<p class="p4_but">
+					<button onclick="location.reload();"><img src="img/p6_but.png"/></button>
+				</p>
+			</div>
+		</div>
+		<!--接收者打开页面 end-->
+		<div class="share"  onclick="$('.share').fadeOut();">
+			<p class="share_but"><img src="img/p5_but.png"/></p>
+			<span class="share_icon1"><img src="img/p5_icon1.png"/></span>
+			<span class="share_icon2"><img src="img/p5_icon2.png"/></span>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script>
+		//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio').play();
+	    }, false);
+		//音乐播放暂停v 
+	    var audio = document.getElementById('audio');
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+	</script>
+</html>

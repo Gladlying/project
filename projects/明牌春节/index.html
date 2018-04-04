@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta name="viewport" id="viewport" content="width=640,user-scalable=0, target-densitydpi=320"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+	</head>
+	<body>
+		<!--<audio id="audio_zt" src="bg.mp3" style="display: block;width: 0;height: 0;" loop="loop" controls="" autoplay="true" preload="none" ></audio>-->
+		
+		<!--p1-->
+		<div class="div_posi p1_div">
+			<p class="logo"><img src="imgs/logo.png"/></p>
+			<div id="music" class="music music_img1" onclick="playOrPaused()"></div>
+			<button class="rule_but"  onclick="$('.rule').fadeIn()"><img src="imgs/rule_but.png"/></button>
+			<!--top  云朵-->
+			<p class="p1_top_cloud1 cloud"><img src="imgs/p1_top_cloud_left.png"/></p>
+			<p class="p1_top_cloud2 cloud"><img src="imgs/p1_top_cloud_right.png"/></p>
+			<!--中间内容-->
+			<div class="p1_center">
+				<img src="imgs/p1_bg2.png" />
+				<p class="p1_bg_cloud1"><img src="imgs/p1_bg_cloud1.png"/></p>
+				<p class="p1_bg_cloud2"><img src="imgs/p1_bg_cloud2.png"/></p>
+				
+				<div class="p1_flower1 fadeInLeft">
+					<img src="imgs/p1_top_img1_3.png"/>
+					<p class="p1_flower1_1 yoyo"><img src="imgs/p1_top_img1_2.png"/></p>
+					<p class="p1_flower1_2 yoyo"><img src="imgs/p1_top_img1_4.png"/></p>
+				</div>
+				<div class="p1_flower2 fadeInRight">
+					<img src="imgs/p1_top_img2_1.png"/>
+					<p class="p1_flower2_1 yoyo"><img src="imgs/p1_top_img2_2.png"/></p>
+				</div>
+				
+				<p class="p1_txt1 flipInY"><img src="imgs/p1_txt1.png"/></p>
+				<p class="p1_txt2 flipInX"><img src="imgs/p1_txt2.png"></p>
+			</div>
+			<button class="p1_but bounceIn">
+				<p class="p1_center_but_img"><img src="imgs/p1_but_icon.png"/></p>
+				<img class="shake" src="imgs/p1_but.png" />
+			</button>
+			<!--底部-->
+			<div class="p1_bottom">
+				<div class="p1_bottom_cloud1 fadeInUp"><img src="imgs/p1_bottom_cloud1.png"/></div>
+				<div class="p1_bottom_cloud2"><img src="imgs/p1_bottom_cloud2.png"/></div>
+				<div class="p1_bottom_cloud3"><img src="imgs/p1_bottom_cloud3.png"/></div>
+				<p class="p1_bottom_tree1"><img src="imgs/p1_tree_left.png"/></p>
+				<p class="p1_bottom_tree2"><img src="imgs/p1_tree_right.png"/></p>
+				<p class="p1_bottom_img1"><img src="imgs/p1_bottom_img1.png"/></p>
+				<p class="p1_bottom_img2 yaoyiyao"><img src="imgs/p1_bottom_img2.png"/></p>
+				<p class="p1_bottom_img3"><img src="imgs/p1_bottom_img3.png"/></p>
+				<p class="p1_bottom_img4 yaoyiyao"><img src="imgs/p1_bottom_img4.png"/></p>
+			</div>
+		</div>
+		<!--p2-->
+		<div class="div_posi p2_div">
+			<p class="p2_logo"><img src="imgs/logo.png"/></p>
+			<!--top  云朵-->
+			<p class="p1_top_cloud1"><img src="imgs/p1_top_cloud_left.png"/></p>
+			<p class="p1_top_cloud2"><img src="imgs/p1_top_cloud_right.png"/></p>
+			<!--中间内容-->
+			<div class="p1_center">
+				<img src="imgs/p1_bg2.png" />
+				<p class="p1_bg_cloud1"><img src="imgs/p1_bg_cloud1.png"/></p>
+				<p class="p1_bg_cloud2"><img src="imgs/p1_bg_cloud2.png"/></p>
+				<div class="p2_flower1">
+					<img src="imgs/p1_top_img1_3.png"/>
+					<p class="p1_flower1_1 yoyo"><img src="imgs/p1_top_img1_2.png"/></p>
+					<p class="p1_flower1_2 yoyo"><img src="imgs/p1_top_img1_4.png"/></p>
+				</div>
+				<div class="p2_flower2">
+					<img src="imgs/p1_top_img2_1.png"/>
+					<p class="p1_flower2_1 yoyo"><img src="imgs/p1_top_img2_2.png"/></p>
+				</div>
+				<div class="p2_img_div">
+					<p class="p2_img_div_img">
+						<img src="imgs/p2_sc.png" />
+					</p>
+				</div>
+			</div>
+			<button class="p2_but">
+				<p class="p1_center_but_img"><img src="imgs/p1_but_icon.png"/></p>
+				<img src="imgs/p2_but.png" />
+				<input type="file" class="p2_but_sc" name="file" id="file" />
+			</button>
+			<div class="p2_jdt">
+				<div class="tbox">
+			        <div class="tiao"></div>
+			    </div>
+			    <p class="p2_txt"><img src="imgs/p2_txt.png"/></p>
+			</div>
+			<!--底部-->
+			<div class="p1_bottom">
+				<div class="p2_bottom_cloud1"><img src="imgs/p1_bottom_cloud1.png"/></div>
+				<div class="p2_bottom_cloud2"><img src="imgs/p1_bottom_cloud2.png"/></div>
+				<div class="p2_bottom_cloud3"><img src="imgs/p1_bottom_cloud3.png"/></div>
+				<p class="p2_bottom_tree1"><img src="imgs/p1_tree_left.png"/></p>
+				<p class="p2_bottom_tree2"><img src="imgs/p1_tree_right.png"/></p>
+				<p class="p2_bottom_img1"><img src="imgs/p1_bottom_img1.png"/></p>
+				<p class="p1_bottom_img2 yaoyiyao2"><img src="imgs/p1_bottom_img2.png"/></p>
+				<p class="p2_bottom_img3"><img src="imgs/p1_bottom_img3.png"/></p>
+				<p class="p1_bottom_img4 yaoyiyao2"><img src="imgs/p1_bottom_img4.png"/></p>
+			</div>
+		</div>
+		<!--p3-->
+		<div class="div_posi p3_div">
+			<p class="p2_logo"><img src="imgs/logo.png"/></p>
+			<!--top  云朵-->
+			<p class="p1_top_cloud1"><img src="imgs/p1_top_cloud_left.png"/></p>
+			<p class="p1_top_cloud2"><img src="imgs/p1_top_cloud_right.png"/></p>
+			<!--中间内容-->
+			<div class="p1_center">
+				<img src="imgs/p1_bg2.png" />
+				<p class="p1_bg_cloud1"><img src="imgs/p1_bg_cloud1.png"/></p>
+				<p class="p1_bg_cloud2"><img src="imgs/p1_bg_cloud2.png"/></p>
+				<div class="p2_flower1">
+					<img src="imgs/p1_top_img1_3.png"/>
+					<p class="p1_flower1_1 yoyo"><img src="imgs/p1_top_img1_2.png"/></p>
+					<p class="p1_flower1_2 yoyo"><img src="imgs/p1_top_img1_4.png"/></p>
+				</div>
+				<div class="p2_flower2">
+					<img src="imgs/p1_top_img2_1.png"/>
+					<p class="p1_flower2_1 yoyo"><img src="imgs/p1_top_img2_2.png"/></p>
+				</div>
+				<div class="p2_img_div p3_img_div">
+					<p class="p2_img_div_img p3_img_div_img">
+						<img src="imgs/img.jpg" />
+					</p>
+					<!--年龄-->
+					<p class="p3_biaoqian">
+						<img src="imgs/p3_age_icon.png"/>
+						<span class="p3_biaoqian_txt">
+							<font id="age">15</font>岁
+						</span>
+					</p>
+					<div class="p3_img"></div>
+				</div>
+				<!--文字-->
+				<div class="p3_txt">
+					<span class="p3_txt_icon1"><img src="imgs/p3_txt_icon1.png"/></span>
+					<span class="p3_txt_icon2"><img src="imgs/p3_txt_icon2.png"/></span>
+					<p class="age_txt">没什么好夸的，你只是一个普普通通的年轻貌美女子。</p>
+				</div>
+			</div>
+			<div class="p3_but">
+				<button onclick="location.reload();"><img src="imgs/p3_but1.png"/></button>
+				<button class="p3_but2"><img src="imgs/p3_but2.png"/></button>
+			</div>
+			<!--底部-->
+			<div class="p1_bottom">
+				<div class="p3_bottom_cloud1"><img src="imgs/p1_bottom_cloud1.png"/></div>
+				<div class="p3_bottom_cloud2"><img src="imgs/p1_bottom_cloud2.png"/></div>
+				<div class="p3_bottom_cloud3"><img src="imgs/p1_bottom_cloud3.png"/></div>
+				<p class="p3_bottom_tree1"><img src="imgs/p1_tree_left.png"/></p>
+				<p class="p3_bottom_tree2"><img src="imgs/p1_tree_right.png"/></p>
+				<p class="p3_bottom_img1"><img src="imgs/p1_bottom_img1.png"/></p>
+				<p class="p3_bottom_img2 yaoyiyao2"><img src="imgs/p1_bottom_img2.png"/></p>
+				<p class="p3_bottom_img3"><img src="imgs/p1_bottom_img3.png"/></p>
+				<p class="p3_bottom_img4 yaoyiyao2"><img src="imgs/p1_bottom_img4.png"/></p>
+			</div>
+		</div>
+		<!--p4-->
+		<div class="div_posi p4_div">
+			<p class="p2_logo"><img src="imgs/logo.png"/></p>
+			<!--top  云朵-->
+			<p class="p1_top_cloud1"><img src="imgs/p1_top_cloud_left.png"/></p>
+			<p class="p1_top_cloud2"><img src="imgs/p1_top_cloud_right.png"/></p>
+			<!--中间内容-->
+			<div class="p1_center">
+				<img src="imgs/p1_bg2.png" />
+				<p class="p1_bg_cloud1"><img src="imgs/p1_bg_cloud1.png"/></p>
+				<p class="p1_bg_cloud2"><img src="imgs/p1_bg_cloud2.png"/></p>
+				<div class="p2_flower1">
+					<img src="imgs/p1_top_img1_3.png"/>
+					<p class="p1_flower1_1 yoyo"><img src="imgs/p1_top_img1_2.png"/></p>
+					<p class="p1_flower1_2 yoyo"><img src="imgs/p1_top_img1_4.png"/></p>
+				</div>
+				<div class="p2_flower2">
+					<img src="imgs/p1_top_img2_1.png"/>
+					<p class="p1_flower2_1 yoyo"><img src="imgs/p1_top_img2_2.png"/></p>
+				</div>
+				<!--红包-->
+				<div class="p4_red">
+					<img class="p4_red_div_bg" src="imgs/p4_bg1.png" />
+					<!--红包  背景-->
+					<div class="p4_red_div">
+						<img src="imgs/p4_bg2.png" />
+						<!--现金红包-->
+						<div class="p4_red_xj">
+							<p class="p4_red_xj_img"><img src="imgs/p4_xj_img.png"/></p>
+							<p class="p4_red_xj_hb"><img src="imgs/p4_xj.png"/></p>
+							<p class="p4_red_xj_txt1">
+								恭喜你获得<br />
+								明牌珠宝现金红包<span><font>1</font>元</span>！
+							</p>
+							<p class="p4_red_xj_txt2"><img src="imgs/p4_xj_txt2.png"/></p>
+						</div>
+						<!--卡券红包-->
+						<div class="p4_red_kq">
+							<p class="p4_red_kq_img"><img src="imgs/p4_kq_img.png"/></p>
+							<p class="p4_red_kq_hb"><img src="imgs/p4_kq1.png"/></p>
+							<div class="p4_red_kq_txt">
+								恭喜你获得<br />
+								明牌珠宝<span><font>20</font>元</span>新年礼券
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="p4_but">
+				<button><img src="imgs/p4_but1.png"/></button>
+				<button onclick="$('.share').fadeIn();"><img src="imgs/p4_but2.png"/></button>
+			</div>
+			<!--底部-->
+			<div class="p1_bottom">
+				<div class="p3_bottom_cloud1"><img src="imgs/p1_bottom_cloud1.png"/></div>
+				<div class="p3_bottom_cloud2"><img src="imgs/p1_bottom_cloud2.png"/></div>
+				<div class="p3_bottom_cloud3"><img src="imgs/p1_bottom_cloud3.png"/></div>
+				<p class="p3_bottom_tree1"><img src="imgs/p1_tree_left.png"/></p>
+				<p class="p3_bottom_tree2"><img src="imgs/p1_tree_right.png"/></p>
+				<p class="p3_bottom_img1"><img src="imgs/p1_bottom_img1.png"/></p>
+				<p class="p3_bottom_img2 yaoyiyao2"><img src="imgs/p1_bottom_img2.png"/></p>
+				<p class="p3_bottom_img3"><img src="imgs/p1_bottom_img3.png"/></p>
+				<p class="p3_bottom_img4 yaoyiyao2"><img src="imgs/p1_bottom_img4.png"/></p>
+			</div>
+		</div>
+		<!--各种弹窗-->
+		<!--规则-->
+		<div class="rule pop_bg">
+			<div class="rule_img">
+				<img src="imgs/rule.png"/>
+				<span class="rule_icon" onclick="$('.rule').fadeOut()"><img src="imgs/rule_icon.png"/></span>
+			</div>
+		</div>
+		<!--分享-->
+		<div class="share pop_bg">
+			<div class="share_img">
+				<img src="imgs/share_img.png"/>
+			</div>
+		</div>
+		<!--领取动画-->
+		<div class="receive pop_bg">
+			<div class="receive_img">
+				<img src="imgs/receive_img1.png" />
+				<p class="receive_img2"><img src="imgs/receive_img2.png"/></p>
+				<p class="receive_img3"><img src="imgs/receive_img3.png"/></p>
+				<p class="receive_img4"><img src="imgs/receive_img4.png"/></p>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/snowfall.jquery.js" ></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		//必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio_zt').play();
+	    }, false);
+		//音乐播放暂停v 
+	    var audio = document.getElementById('audio_zt');
+	    //audio.volume = 0.1;
+		function playOrPaused(){
+			if(audio.paused){
+				audio.play();
+				document.getElementById("music").className="music_img1";
+				return;
+			}
+			audio.pause();
+			document.getElementById("music").className="music_img2";
+		}
+		$(function(){
+			
+		})
+		$(document).snowfall('clear');
+        $(document).snowfall({
+            image: "imgs/p3_icon.png",
+            flakeCount:30,
+            minSize: 10,
+            maxSize: 25
+        });
+	</script>
+</html>
+ 
